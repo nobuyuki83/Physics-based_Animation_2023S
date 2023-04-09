@@ -33,6 +33,7 @@ Topics:
 - finite boundary method
 
 
+
 ## Lecture Schedule
 
 | Day | Topic | Assignment | Slide |
@@ -50,6 +51,10 @@ Topics:
 | (11)<br> Jun. 26 | **Continuum Mechanics2**<br>Mesh interpolation<br />Tensor | task09 |  |
 | (12)<br> Jul. 3 | **Geometric Deformation**<br> singular value decomposition,<br> shape matching method,<br> linear blend skinning,<br> as-rigid-as possible deformation | task10 |  |
 | (13)<br> Jul. 10 | **Advanced Interpolation**<br> mean value coordinate,<br> radial based function |  |  |
+
+#### Slides
+
+- [[1] introduction](http://www.nobuyuki-umetani.com/pba2021s/introduction.pdf)
 
 
 
@@ -72,14 +77,6 @@ There are many small programming assignments. To do the assignments, you need to
 - Don't post the answers of the assignment on Slack 
 - Late submission of an assignment is subject to grade deduction
 - Score each assignemnt will not be open soon (instructer needs to adjust weight of the score later)
-
-
-
-## Slides
-
-- [[1] introduction](http://www.nobuyuki-umetani.com/pba2021s/introduction.pdf)
-
-  
 
 
 
