@@ -32,7 +32,7 @@ Extract the compressed file and rename the folder as `glfwlib` and put it under 
 Make sure you have a header file `glfw3.h` at
 
 ```
-acg-<username>/external/glfwlib/include/GLFW/glfw3.h
+pba-<username>/external/glfwlib/include/GLFW/glfw3.h
 ```
 
 ### Install from Source Code
@@ -40,7 +40,7 @@ acg-<username>/external/glfwlib/include/GLFW/glfw3.h
 Alternatively, you can build `glfw` from source code and put the library under `external/glfwlib` with
 
 ```bash
-$ git submodule update --init 3rd_party/glfw
+$ git submodule update --init external/glfw
 $ cd external/glfw
 $ cmake .
 $ cmake --build . --config Release
@@ -50,7 +50,7 @@ $ cmake --install . --prefix ../glfwlib
 Make sure you have a header file `glfw3.h` at
 
 ```
-acg-<username>/external/glfwlib/include/GLFW/glfw3.h
+pba-<username>/external/glfwlib/include/GLFW/glfw3.h
 ```
 
 ----
@@ -83,7 +83,7 @@ $ cmake --install . --prefix ../glfwlib
 Make sure you have a header file `glfw3.h` at
 
 ```
-acg-<username>/external/glfwlib/include/GLFW/glfw3.h
+pba-<username>/external/glfwlib/include/GLFW/glfw3.h
 ```
 
 ----
@@ -101,7 +101,7 @@ Extract the compressed file and rename the folder as `glfwlib` and put it under 
 Make sure you have a header file `glfw3.h` at
 
 ```
-acg-<username>/external/glfwlib/include/GLFW/glfw3.h
+pba-<username>/external/glfwlib/include/GLFW/glfw3.h
 ```
 
 ### Build from Source Code
@@ -119,5 +119,5 @@ $ cmake --install . --prefix ../external
 Make sure you have a header file `glfw3.h` at
 
 ```
-acg-<username>/external/glfwlib/include/GLFW/glfw3.h
+pba-<username>/external/glfwlib/include/GLFW/glfw3.h
 ```

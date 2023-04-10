@@ -27,12 +27,12 @@ The repository can be downloaded from
  http://eigen.tuxfamily.org/index.php?title=Main_Page#Download
 
 1. Download the compressed file (e.g.,` eigen-3.*.*.zip`)  and extract it. This result in a directory `eigen-3.*.*`
-2. Put the extracted directory under the `external` directory as `acg-<username>/external/eigen-3.*.*` .
+2. Put the extracted directory under the `external` directory as `pba-<username>/external/eigen-3.*.*` .
 
 Make sure you have a header file `Dense` at
 
 ```
-acg-<username>/external/eigen-3.*.*/Eigen/Dense
+pba-<username>/external/eigen-3.*.*/Eigen/Dense
 ```
 
 ### Clone Library
@@ -46,7 +46,7 @@ $ git submodule update --init external/eigen # clone the "eigen" repository
 Make sure you have a header file `Dense` at
 
 ```
-acg-<username>/external/eigen/Eigen/Dense
+pba-<username>/external/eigen/Eigen/Dense
 ```
 
 
@@ -69,12 +69,12 @@ The repository can be downloaded from here:
  http://eigen.tuxfamily.org/index.php?title=Main_Page#Download
 
 1. Download the compressed file (e.g.,` eigen-3.*.*.zip`)  and extract it. This result in a directory `eigen-3.*.*`
-2. Put the extracted file under the `external` directory as `acg-<username>/external/eigen-3.*.*` .
+2. Put the extracted file under the `external` directory as `pba-<username>/external/eigen-3.*.*` .
 
 Make sure you have a header file `Dense` at
 
 ```
-acg-<username>/external/eigen-3.*.*/Eigen/Dense
+pba-<username>/external/eigen-3.*.*/Eigen/Dense
 ```
 
 ### Clone Repository
@@ -87,7 +87,7 @@ $ git submodule update --init external/eigen # clone the "eigen" repository (thi
 
 Make sure you have a header file `Dense` at
 ```
-acg-<username>/external/eigen/Eigen/Dense
+pba-<username>/external/eigen/Eigen/Dense
 ```
 
 
@@ -100,12 +100,12 @@ Download the repository from here
  http://eigen.tuxfamily.org/index.php?title=Main_Page#Download
 
 1. Download the compressed file (e.g.,` eigen-3.*.*.zip`)  and extract it. This result in a directory `eigen-3.*.*`
-2. Put the extracted file under the `external` directory as `acg-<username>/external/eigen-3.*.*` .
+2. Put the extracted file under the `external` directory as `pba-<username>/external/eigen-3.*.*` .
 
 Make sure you have a header file `Dense` at
 
 ```
-acg-<username>/external/eigen-3.*.*/Eigen/Dense
+pba-<username>/external/eigen-3.*.*/Eigen/Dense
 ```
 
 ### Clone Repository
@@ -119,7 +119,7 @@ $ git submodule update --init external/eigen # clone the "eigen" repository (thi
 Make sure you have a header file `Dense` at
 
 ```
-acg-<username>/external/eigen/Eigen/Dense
+pba-<username>/external/eigen/Eigen/Dense
 ```
 
 ---
@@ -139,5 +139,5 @@ $ cmake --install . --prefix ../../eigenlib # install eigen into the "eigenlib" 
 Make sure you have a header file `Dense` at
 
 ```
-acg-<username>/external/eigenlib/include/eigen3/Eigen/Dense
+pba-<username>/external/eigenlib/include/eigen3/Eigen/Dense
 ```

@@ -38,7 +38,7 @@ Topics:
 
 | Day | Topic | Assignment | Slide |
 |:----|:---|:---|-----|
-| (1)<br> Apr. 10 | **Introduction**<br> |  |  |
+| (1)<br> Apr. 10 | **Introduction**<br> |  | [[1]](http://www.nobuyuki-umetani.com/pba2023s/introduction.pdf) |
 | (2)<br> Apr. 17 | **Data Structure**<br>data structure for simulation<br/>Implicit surface | task00 |  |
 | (3)<br> Apr. 24 | **Time Integration**<br/> Newtonian-mechanics<br/> backward & forward Euler method,<br/> particle system | task01 | |
 | (4)<br> May 1 | **Broad-phase Collision Detection**<br/>princepal component analysis<br>sort & sweep method <br/>bounding volume hierarchy | task02 |  |
@@ -54,7 +54,8 @@ Topics:
 
 #### Slides
 
-- [[1] introduction](http://www.nobuyuki-umetani.com/pba2021s/introduction.pdf)
+- [[1] introduction](http://www.nobuyuki-umetani.com/pba2023s/introduction.pdf)
+- [[2] data_structure](http://www.nobuyuki-umetani.com/pba2023s/data_structure.pdf)
 
 
 
