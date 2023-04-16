@@ -3,13 +3,13 @@
 
 To do the assignment, it is necessary to set up the C++ programming environment. Namely, you need **Git** , **C++ Compiler** (of course!), **cmake**, and **IDE** installed in your computer. This document targets **MacOS**, **Ubuntu** and **Windows**. 
 
-Depending on the versions of the OS, you may encounter some problems I encourage you to sove it by yourself first. These toos are very poupular and there are tons of information on the internet! If you solve the problem, let the instructer know on the slack the problem and solution together with the version of your OS.
+Depending on the versions of the OS, you may encounter some problems I encourage you to slove it by yourself first. These tools are very poupular and there are tons of information on the internet! If you solve the problem, let the instructor know on Slack the problem and solution together with the version of your OS.
 
 
 
 ## Git 
 
-Git is ncessary to download and upload the assignments. Let's see if the `git` is already installed in your computer. Type the following command and see if the version of the `git` is shown.
+Git is necssary to download and upload the assignments. Let's see if the `git` is already installed in your computer. Type the following command and see if the version of the `git` is shown.
 
 ```bash
 $ git --version
