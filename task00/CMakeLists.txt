@@ -26,11 +26,14 @@ find_package(OpenGL REQUIRED)
 set(CMAKE_PREFIX_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../external/glfwlib) # give hint to cmake to find glfw library
 find_package(glfw3 REQUIRED)
 
+set(EIGEN3_INCLUDE_DIR
+  ${CMAKE_CURRENT_SOURCE_DIR}/../external/eigen)
+
 ########################
 # include, build, and link
 
 include_directories(
-   ${CMAKE_CURRENT_SOURCE_DIR}/../external/eigen
+  EIGEN3_INCLUDE_DIR
 )
 
 add_executable(${PROJECT_NAME}
@@ -48,6 +51,4 @@ GET_TARGET_PROPERTY(GLFW_INCLUDE_DIR
   glfw INTERFACE_INCLUDE_DIRECTORIES)
 message(STATUS "glfw include directory: ${GLFW_INCLUDE_DIR}")
 
-GET_TARGET_PROPERTY(EIGEN3_EIGEN_INCLUDE_DIR
-  Eigen3::Eigen INTERFACE_INCLUDE_DIRECTORIES)
-message(STATUS "eigen3 include directory: ${EIGEN3_EIGEN_INCLUDE_DIR}")
+message(STATUS "eigen3 include directory: ${EIGEN3_INCLUDE_DIR}")
