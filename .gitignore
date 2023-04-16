@@ -53,6 +53,3 @@ cmake-build-release
 
 *.DS_Store  
 build
-
-
-external/glfw
