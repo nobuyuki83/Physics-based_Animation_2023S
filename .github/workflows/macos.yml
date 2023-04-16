@@ -11,20 +11,17 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest-latest
 
     steps:
+    - name: Show Xcode version
+      run: xcodebuild -version    
+
     - uses: actions/checkout@v2
 
     - name: install glfw
       run: |
-        sudo apt-get update
-        sudo apt-get install \
-          xorg-dev libx11-dev \
-          libglu1-mesa libglu1-mesa-dev \
-          libgl1-mesa-glx libgl1-mesa-dev
-        sudo apt-get install libglfw3
-        sudo apt-get install libglfw3-dev
+        brew install glfw
 
     - name: get eigen
       run: |
