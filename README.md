@@ -1,5 +1,7 @@
 # Physics-based Animation 4860-1081 2023S
 
+[![Build_Win](https://github.com/PBA-2023S/pba/actions/workflows/windows.yml/badge.svg)](https://github.com/PBA-2023S/pba/actions/workflows/windows.yml)
+[![Build_Linux](https://github.com/PBA-2023S/pba/actions/workflows/ubuntu.yml/badge.svg)](https://github.com/PBA-2023S/pba/actions/workflows/ubuntu.yml)
 
 ![teaser](doc/rep_image.png)
 
