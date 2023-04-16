@@ -26,16 +26,11 @@ find_package(OpenGL REQUIRED)
 set(CMAKE_PREFIX_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../external/glfwlib) # give hint to cmake to find glfw library
 find_package(glfw3 REQUIRED)
 
-# use eigen
-# find_package(Eigen3 REQUIRED) # this works only for installation by package managers
-FILE(GLOB EIGEN3_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/../external/eigen*) # find downloaded eigen directories in 3rd_party
-message(STATUS "eigen directory candidate: ${EIGEN3_ROOT}")
-include(${CMAKE_CURRENT_SOURCE_DIR}/../external/FindEigen3.cmake) # call script to find eigen3
-
 ########################
 # include, build, and link
 
 include_directories(
+   ${CMAKE_CURRENT_SOURCE_DIR}/../external/eigen
 )
 
 add_executable(${PROJECT_NAME}
@@ -45,7 +40,6 @@ add_executable(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}
   OpenGL::GL  # use OpenGL library
   glfw  # use glfw library
-  Eigen3::Eigen  # use Eigen library
 )
 
 #############################
