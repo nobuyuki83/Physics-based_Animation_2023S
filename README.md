@@ -41,7 +41,7 @@ Topics:
 | Day | Topic | Assignment | Slide |
 |:----|:---|:---|-----|
 | (1)<br> Apr. 10 | **Introduction**<br> |  | [[1]](http://www.nobuyuki-umetani.com/pba2023s/introduction.pdf) |
-| (2)<br> Apr. 17 | **Data Structure**<br>data structure for simulation<br/>Implicit surface | [task00](task00/README.md) |  |
+| (2)<br> Apr. 17 | **Data Structure**<br>data structure for simulation<br/>Implicit surface | [task00](task00/README.md) | [[2]](http://www.nobuyuki-umetani.com/pba2023s/data_structure.pdf) |
 | (3)<br> Apr. 24 | **Time Integration**<br/> Newtonian-mechanics<br/> backward & forward Euler method,<br/> particle system | task01 | |
 | (4)<br> May 1 | **Broad-phase Collision Detection**<br/>princepal component analysis<br>sort & sweep method <br/>bounding volume hierarchy | task02 |  |
 | (5)<br> May 8 | **Numerical Optimization**<br/>Hessian & Jacobian,<br>Newton-Raphson method | task03 |  |
@@ -57,8 +57,16 @@ Topics:
 #### Slides
 
 - [[1] introduction](http://www.nobuyuki-umetani.com/pba2023s/introduction.pdf)
+
 - [[2] data_structure](http://www.nobuyuki-umetani.com/pba2023s/data_structure.pdf)
 
+- [[3] cpp](http://www.nobuyuki-umetani.com/pba2023s/cpp.pdf)
+
+- [[4] git](http://www.nobuyuki-umetani.com/pba2023s/git.pdf)
+
+- [[5]newtonian_mechanics ](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf)
+
+  
 
 
 ## Grading
@@ -74,9 +82,9 @@ There are many small programming assignments. To do the assignments, you need to
 
 [How to Submit the Assignments](doc/submit.md)
 
-| Task ID          | Title                        | Thumbnail                                  |
-| :--------------- | :--------------------------- | :----------------------------------------- |
-| [task00](task00) | build C++ Program with CMake | <img src="task00/preview.png" width=100px> |
+| Task ID                    | Title                        | Thumbnail                                  |
+| :------------------------- | :--------------------------- | :----------------------------------------- |
+| [task00](task00/README.md) | build C++ Program with CMake | <img src="task00/preview.png" width=100px> |
 
 #### Policy
 
@@ -89,6 +97,7 @@ There are many small programming assignments. To do the assignments, you need to
 
 ## Reading Material
 
+- [Ten Min Physics (Youtube channel)](https://www.youtube.com/@TenMinutePhysics/videos)
 - [Physically Based Modeling: Principles and Practice, Siggraph '97 Course notes by Dr. Baraff](http://www.cs.cmu.edu/~baraff/sigcourse/index.html)
 - [Physics-Based Animation  by Kenny Erleben et al. (free textobook about rigid body dynamics)](https://iphys.wordpress.com/2020/01/12/free-textbook-physics-based-animation/)
 - [Dynamic Deformables: Implementation and Production Practicalities, SIGGRAPH 2020 Courses](http://www.tkim.graphics/DYNAMIC_DEFORMABLES/)
