@@ -81,6 +81,7 @@ $ git branch -a   # make sure you are in the task0 branch
 ```
 
 
+
 ### Compile the Code and Edit This Document
 
 After the environment is ready, let's build and compile the code. We do **out-of-source** build by making a new directory for build `task00/build` and compile inside that directory

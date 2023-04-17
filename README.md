@@ -57,13 +57,9 @@ Topics:
 #### Slides
 
 - [[1] introduction](http://www.nobuyuki-umetani.com/pba2023s/introduction.pdf)
-
 - [[2] data_structure](http://www.nobuyuki-umetani.com/pba2023s/data_structure.pdf)
-
 - [[3] cpp](http://www.nobuyuki-umetani.com/pba2023s/cpp.pdf)
-
 - [[4] git](http://www.nobuyuki-umetani.com/pba2023s/git.pdf)
-
 - [[5]newtonian_mechanics ](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf)
 
   
