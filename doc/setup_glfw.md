@@ -3,11 +3,11 @@
 GLFW is a library to open a window with OpenGL graphics visualization. 
 
 There are three ways to set up GLFW:  
-- using package manager (for Mac and Ubuntu)
-- download pre-build library (Mac and Windows)
-- build the source code (for all OSs)
+1. using package manager (for Mac and Ubuntu)
+2. download pre-build library (Mac and Windows)
+3. build the source code (for all OSs)
 
-Below, we discuss these options in detail for each OS
+***This class support the option 1 and 3.*** Below, we discuss these options in detail for each OS
 
 ----
 
@@ -19,20 +19,6 @@ for Mac, install `glfw` using package manager `brew` as
 
 ```bash
 $ brew install glfw
-```
-
-### Download Pre-compiled Library
-
-Download the pre-compiled library (`glfw-3.*.*.bin.MACOS.zip`) from
-
- https://www.glfw.org/download.html
-
-Extract the compressed file and rename the folder as `glfwlib` and put it under the `external/` folder of the reository. 
-
-Make sure you have a header file `glfw3.h` at
-
-```
-pba-<username>/external/glfwlib/include/GLFW/glfw3.h
 ```
 
 ### Install from Source Code
@@ -89,20 +75,6 @@ pba-<username>/external/glfwlib/include/GLFW/glfw3.h
 ----
 
 ## Windows
-
-### Download Pre-compiled Library
-
-Download the pre-compiled library (`glfw-3.*.*.bin.WIN64.zip`) from
-
- https://www.glfw.org/download.html
-
-Extract the compressed file and rename the folder as `glfwlib` and put it under the `external/` folder of the reository. 
-
-Make sure you have a header file `glfw3.h` at
-
-```
-pba-<username>/external/glfwlib/include/GLFW/glfw3.h
-```
 
 ### Build from Source Code
 

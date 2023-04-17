@@ -53,3 +53,5 @@ cmake-build-release
 
 *.DS_Store  
 build
+
+*/main_ans.cpp
