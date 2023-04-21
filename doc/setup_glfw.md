@@ -85,7 +85,7 @@ $ git submodule update --init external/glfw
 $ cd external/glfw
 $ cmake .
 $ cmake --build . --config Release
-$ cmake --install . --prefix ../external
+$ cmake --install . --prefix ../glfwlib
 ```
 
 Make sure you have a header file `glfw3.h` at
