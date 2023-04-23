@@ -81,6 +81,7 @@ There are many small programming assignments. To do the assignments, you need to
 | Task ID                    | Title                        | Thumbnail                                  |
 | :------------------------- | :--------------------------- | :----------------------------------------- |
 | [task00](task00/README.md) | build C++ Program with CMake | <img src="task00/preview.png" width=100px> |
+| [task01](task01/README.md) | Implicit Time Integration    | <img src="task01/preview.png" width=100px> |
 
 #### Policy
 

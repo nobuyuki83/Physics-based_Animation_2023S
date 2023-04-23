@@ -2,7 +2,7 @@
 
 # Task00: Build C++ Program with CMake
 
-**Deadline: Apr. 20th (Thu) at 15:00pm**
+**Deadline: Apr. 27th (Thu) at 15:00pm**
 
 
 
@@ -120,6 +120,6 @@ got to the GitHub webpage `https://github.com/PBA-2023S/pba-<username>` . If eve
 
 ## Trouble Shooting
 
-- I mistakenly submit the assignement in the `main` branch
+- I mistakenly submit the assignment in the `main` branch
   - Make a branch `task00` and submit again
 
