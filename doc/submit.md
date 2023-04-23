@@ -107,6 +107,12 @@ Go to the GitHub webpage `https://github.com/PBA-2023S/pba-<username>` . If ever
 
 ![](../doc/pullrequest.png)
 
+### Notes
+
+- Do not submit multiple pull requests. Only the first pull request is graded
+- Do not close the pull request by yourself. The instructor will close the pull request
+- If you mistakenly merge the pull request, it's OK, but be careful not to merge next time. 
+
 
 
 ## Tips for Git / GitHub

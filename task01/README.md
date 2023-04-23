@@ -35,8 +35,7 @@ Now you are ready to go!
 
 This program solves the equation of motion ${d^2 r}/{d t^2} = - {1}/{r^2}$ and visualize it in the polar coordinate.
 
-Modify the code at `line #33`  and `line #34` in [main.cpp](main.cpp) to integrate the equation of motion.
-Specifically, use the Euler's semi-implicit scheme (linearization of right-hand side) for the integration.
+Modify the code at `line #43`  and `line #44` in [main.cpp](main.cpp) to integrate the equation of motion using the ***Backward(Implicit) Euler Method*** scheme.
 
 Save the screenshot image overwriting `task01/problem2.png`
 
@@ -45,4 +44,4 @@ Save the screenshot image overwriting `task01/problem2.png`
 
 ## After Doing the Assignment
 
-After modify the code, push the code and submit a pull request.
+After modifying the code, push the code and submit a pull request.
