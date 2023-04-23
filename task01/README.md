@@ -33,9 +33,9 @@ Now you are ready to go!
 
 ## Problem 2
 
-This program solves the equation of motion $\frac{dd r}{ddt} = - \frac{1}{r^2}$ and visualize it in the polar coordinate.
+This program solves the equation of motion ${d^2 r}/{d t^2} = - {1}/{r^2}$ and visualize it in the polar coordinate.
 
-Modify the code at `line #33`  and `line #34` in `main.cpp` to integrate the equation of motion.
+Modify the code at `line #33`  and `line #34` in [main.cpp](main.cpp) to integrate the equation of motion.
 Specifically, use the Euler's semi-implicit scheme (linearization of right-hand side) for the integration.
 
 Save the screenshot image overwriting `task01/problem2.png`
