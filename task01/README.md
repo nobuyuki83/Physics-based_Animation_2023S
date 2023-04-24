@@ -30,12 +30,14 @@ Now you are ready to go!
 
 ![problem1](problem1.png)
 
+This program solves the equation of motion ${d^2 r}/{d t^2} = - {1}/{r^2}$ and visualize it in the polar coordinate, simulating the motion of small objects under gravity. The points bounce at the surface $r=0.5$. The movement of ***blue object*** is integrated using the ***Forward Time Integration***. Observe the energy gain artifact. 
+
+
+
 
 ## Problem 2
 
-This program solves the equation of motion ${d^2 r}/{d t^2} = - {1}/{r^2}$ and visualize it in the polar coordinate.
-
-Modify the code at `line #43`  and `line #44` in [main.cpp](main.cpp) to integrate the equation of motion using the ***Backward(Implicit) Euler Method*** scheme.
+Modify the code at `line #43`  and `line #44` in [main.cpp](main.cpp) to integrate the equation of motion using the ***Backward(Implicit) Euler Method*** scheme for the movement of ***Red object***. 
 
 Save the screenshot image overwriting `task01/problem2.png`
 
@@ -45,3 +47,14 @@ Save the screenshot image overwriting `task01/problem2.png`
 ## After Doing the Assignment
 
 After modifying the code, push the code and submit a pull request.
+
+
+
+
+
+## Notes
+
+- Do not submit multiple pull requests. Only the first pull request is graded
+- Do not close the pull request by yourself. The instructor will close the pull request
+- If you mistakenly merge the pull request, it's OK, but be careful not to merge next time. 
+
