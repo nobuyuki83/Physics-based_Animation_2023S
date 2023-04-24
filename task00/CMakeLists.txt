@@ -23,7 +23,7 @@ project(task00)
 find_package(OpenGL REQUIRED)
 
 # use glfw
-set(CMAKE_PREFIX_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../external/glfwlib) # give hint to cmake to find glfw library
+set(CMAKE_PREFIX_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../external/glfw) # give hint to cmake to find glfw library
 find_package(glfw3 REQUIRED)
 
 ########################
