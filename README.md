@@ -42,8 +42,8 @@ Topics:
 |:----|:---|:---|-----|
 | (1)<br> Apr. 10 | **Introduction**<br> |  | [[1]](http://www.nobuyuki-umetani.com/pba2023s/introduction.pdf) |
 | (2)<br> Apr. 17 | **Data Structure**<br>data structure for simulation<br/>Implicit surface | [task00](task00/README.md) | [[2]](http://www.nobuyuki-umetani.com/pba2023s/data_structure.pdf) |
-| (3)<br> Apr. 24 | **Time Integration**<br/> Newtonian-mechanics<br/> backward & forward Euler method,<br/> particle system | [task01](task01/README.md) | [[6]](http://www.nobuyuki-umetani.com/pba2023s/time_integration.pdf) |
-| (4)<br> May 1 | **Broad-phase Collision Detection**<br/>princepal component analysis<br>sort & sweep method <br/>bounding volume hierarchy | [task02](task02/README.md) |  [[5]](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf) |
+| (3)<br> Apr. 24 | **Time Integration**<br/> backward & forward Euler method,<br/> particle system | [task01](task01/README.md) | [[6]](http://www.nobuyuki-umetani.com/pba2023s/time_integration.pdf) |
+| (4)<br> May 1 | **Broad-phase Collision Detection**<br/>Newtonian-mechanics<br/>principal component analysis<br>sort & sweep method <br/>bounding volume hierarchy | [task02](task02/README.md) |  [[5]](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf) |
 | (5)<br> May 8 | **Numerical Optimization**<br/>Hessian & Jacobian,<br>Newton-Raphson method | task03 |  |
 | (6)<br> May 15 | **Simple Deformation Energy**<br/>mass-spring system | task04 |  |
 | (7)<br> May 22 | **Solving Large Linear System**<br/>Sparse matrix data structure<br/>Conjugate gradient method | task05 |  |
@@ -60,8 +60,11 @@ Topics:
 - [[2] Data Structure](http://www.nobuyuki-umetani.com/pba2023s/data_structure.pdf)
 - [[3] Cpp](http://www.nobuyuki-umetani.com/pba2023s/cpp.pdf)
 - [[4] Git](http://www.nobuyuki-umetani.com/pba2023s/git.pdf)
-- [[5]Newtonian Mechanics](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf)
-- [[6]Time Integration](http://www.nobuyuki-umetani.com/pba2023s/time_integration.pdf)
+- [[5] Newtonian Mechanics](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf)
+- [[6] Time Integration](http://www.nobuyuki-umetani.com/pba2023s/time_integration.pdf)
+- [[7] Jagged Array](http://www.nobuyuki-umetani.com/pba2023s/jagged_array.pdf)
+- [[8] Principal Component Analysis](http://www.nobuyuki-umetani.com/pba2023s/pca.pdf)
+- [[9] Collision Detection](http://www.nobuyuki-umetani.com/pba2023s/collision_detection.pdf)
 
   
 
