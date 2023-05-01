@@ -58,3 +58,6 @@ build
 external/glfwlib
 
 */main_ans.cpp
+*.filters
+*.user
+*.recipe

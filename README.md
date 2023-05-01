@@ -42,8 +42,8 @@ Topics:
 |:----|:---|:---|-----|
 | (1)<br> Apr. 10 | **Introduction**<br> |  | [[1]](http://www.nobuyuki-umetani.com/pba2023s/introduction.pdf) |
 | (2)<br> Apr. 17 | **Data Structure**<br>data structure for simulation<br/>Implicit surface | [task00](task00/README.md) | [[2]](http://www.nobuyuki-umetani.com/pba2023s/data_structure.pdf) |
-| (3)<br> Apr. 24 | **Time Integration**<br/> Newtonian-mechanics<br/> backward & forward Euler method,<br/> particle system | [task01](task01/README.md) | [[5]](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf), [[6]](http://www.nobuyuki-umetani.com/pba2023s/time_integration.pdf) |
-| (4)<br> May 1 | **Broad-phase Collision Detection**<br/>princepal component analysis<br>sort & sweep method <br/>bounding volume hierarchy | task02 |  |
+| (3)<br> Apr. 24 | **Time Integration**<br/> Newtonian-mechanics<br/> backward & forward Euler method,<br/> particle system | [task01](task01/README.md) | [[6]](http://www.nobuyuki-umetani.com/pba2023s/time_integration.pdf) |
+| (4)<br> May 1 | **Broad-phase Collision Detection**<br/>princepal component analysis<br>sort & sweep method <br/>bounding volume hierarchy | [task02](task02/README.md) |  [[5]](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf) |
 | (5)<br> May 8 | **Numerical Optimization**<br/>Hessian & Jacobian,<br>Newton-Raphson method | task03 |  |
 | (6)<br> May 15 | **Simple Deformation Energy**<br/>mass-spring system | task04 |  |
 | (7)<br> May 22 | **Solving Large Linear System**<br/>Sparse matrix data structure<br/>Conjugate gradient method | task05 |  |
@@ -81,8 +81,11 @@ There are many small programming assignments. To do the assignments, you need to
 
 | Task ID                    | Title                        | Thumbnail                                  |
 | :------------------------- | :--------------------------- | :----------------------------------------- |
-| [task00](task00/README.md) | build C++ Program with CMake | <img src="task00/preview.png" width=100px> |
+| [task00](task00/README.md) | Building C++ Program with CMake | <img src="task00/preview.png" width=100px> |
 | [task01](task01/README.md) | Implicit Time Integration    | <img src="task01/preview.png" width=100px> |
+| [task02](task02/README.md) | Linear Momentum Conservation | <img src="task02/preview.png" width=100px> |
+
+
 
 #### Policy
 

@@ -55,6 +55,28 @@ void draw_circle_wireframe(
   ::glEnd();
 }
 
+void draw_box_wireframe(
+  float cx,
+  float cy,
+  float w,
+  float h) {
+  ::glBegin(GL_LINE_LOOP);
+  ::glVertex2f(cx-w*0.5f, cy-h*0.5f);
+  ::glVertex2f(cx+w*0.5f, cy-h*0.5f);
+  ::glVertex2f(cx+w*0.5f, cy+h*0.5f);
+  ::glVertex2f(cx-w*0.5f, cy+h*0.5f);
+  ::glEnd();
+}
+
+void draw_polyline(const std::vector<Eigen::Vector2f> &ps) {
+  ::glBegin(GL_LINE_STRIP);
+  for (auto p: ps) {
+    ::glVertex2f(p.x(), p.y());
+  }
+  ::glEnd();
+}
+
+
 } // namespace pbd
 
 #endif //PBA_GL_UTIL_H_
