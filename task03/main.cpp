@@ -54,7 +54,7 @@ void collision_circle_plane(
  * @param [in] num_div number of division for grid
  * @return grid coordinate
  */
-std::pair<unsigned int, unsigned int> pos2grid(
+std::array<unsigned int,2> pos2grid(
     const Eigen::Vector2f &pos,
     float box_size,
     unsigned int num_div) {
@@ -165,12 +165,12 @@ void set_force_accelerated(
             assert(acc.idx2pgi[idx].grid_idx == jy * num_div + jx);
             unsigned int jp = acc.idx2pgi[idx].particle_idx; // particle index
             if (ip == jp) { continue; }
-            assert(pos2grid(particles[jp].pos, box_size, num_div).first == jx);
-            assert(pos2grid(particles[jp].pos, box_size, num_div).second == jy);
+            assert(pos2grid(particles[jp].pos, box_size, num_div)[0] == jx);
+            assert(pos2grid(particles[jp].pos, box_size, num_div)[1] == jy);
             particles[ip].force += gravitational_force(particles[jp].pos - particles[ip].pos); // adding up forces from near particles
           }
         } else { // far field approximation
-          // write some code here to compute the force from far grid.
+          // write a few lines of code here to compute the force from far grid.
           // use the center for the gravity of the grid : `acc.grid2cg[jy * num_div + jx]`
         }
       }
@@ -186,7 +186,7 @@ int main() {
   constexpr unsigned int num_div = 30;
 
   // particle information
-  std::vector<Particle> particles(20000); // set number of particles
+  std::vector<Particle> particles(5000); // change the number of particles here
   for (auto &p: particles) {
     // initialization
     p.pos.setRandom();
@@ -204,14 +204,16 @@ int main() {
   unsigned int i_step = 0;
   constexpr int num_step = 200;
 
-  std::chrono::system_clock::time_point start = std::chrono::system_clock::now();
+  std::chrono::system_clock::time_point start = std::chrono::system_clock::now(); // record starting time
   while (!::glfwWindowShouldClose(window)) {
     i_step++;
     pba::default_window_2d(window);
     if (i_step < num_step) {
       if( i_step % 20 == 0 ){ std::cout << i_step << " steps in " << num_step << " steps computed" << std::endl; }
-      //set_force_bruteforce(particles);
-      set_force_accelerated(particles, acceleration, box_size, num_div);
+
+      // switch brute-force/accelerated computation here by uncomment/comment below
+      set_force_bruteforce(particles);
+      // set_force_accelerated(particles, acceleration, box_size, num_div);
 
       for (auto &p: particles) {
         // leap frog time integration
@@ -224,7 +226,7 @@ int main() {
         collision_circle_plane(p.pos, p.velo, 0.f, {0.f, +box_size * 0.5f}, {0.f, -1.f}); // top wall
       }
     } else if (i_step == num_step) {
-      std::chrono::system_clock::time_point end = std::chrono::system_clock::now();
+      std::chrono::system_clock::time_point end = std::chrono::system_clock::now(); // record end time
       auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
       std::cout << "total computation time: " << elapsed << "ms" << std::endl;
     }

@@ -39,8 +39,8 @@ The program print out the computation time.
 This program computes [n-body simulation](https://en.wikipedia.org/wiki/N-body_simulation), where the particles move while attracting each others.
 
 Run the program with different numbers of the particles (5k, 10k, and 20k).
-The number of the particle can be set at `line #49`  in [main.cpp](main.cpp).
-Record the computation time by chancing the table below.     
+The number of the particle can be set at `line #189`  in [main.cpp](main.cpp).
+Record the computation time by filling the table below.     
 
 | #particle | time |
 | --- | --- |
@@ -68,12 +68,13 @@ Each grid has representative particle at the center of the gravity of the partic
 The representative particle has all the weights of the particles in the grid. 
 The force from a far particle is approximated by the force from the representative particle of the grid the particle belong.
 
+Comment out `line #215` and uncomment `line #216` to switch to the accelerated computation.
 We use the jagged array data structure to efficiently find the particles inside a grid.
-Modify the code `line #?` to compute the center of gravity for each grid.
+Modify the code around `line #172` to compute the force from particles in far grid.
 
 Run the program with different numbers of the particles (5k, 10k, and 20k).
-The number of the particle can be set at `line #49`  in [main.cpp](main.cpp).
-Record the computation time by chancing the table below.
+The number of the particle can be set at `line #189`  in [main.cpp](main.cpp).
+Record the computation time by filling the table below.
 
 | #particle | time |
 | --- | --- |
