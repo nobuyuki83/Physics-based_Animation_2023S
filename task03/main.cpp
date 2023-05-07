@@ -162,7 +162,7 @@ void set_force_accelerated(
       for (unsigned int jy = 0; jy < num_div; ++jy) {
         if (abs_diff(ix, jx) <= 1 && abs_diff(iy, jy) <= 1) { // this grid is near to the particle as the grid indexes are close
           for (unsigned int idx = acc.grid2idx[jy * num_div + jx]; idx < acc.grid2idx[jy * num_div + jx + 1]; ++idx) {
-            assert(acc.idx2pgi[idx].second == jy * num_div + jx);
+            assert(acc.idx2pgi[idx].grid_idx == jy * num_div + jx);
             unsigned int jp = acc.idx2pgi[idx].particle_idx; // particle index
             if (ip == jp) { continue; }
             assert(pos2grid(particles[jp].pos, box_size, num_div).first == jx);
