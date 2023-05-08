@@ -23,7 +23,7 @@ Now you are ready to go!
 
 ## Problem 1
 
-This task is computationally expensive. Build the program with ***Release*** mode to make the program run faster.  
+This program is computationally expensive. Build the program with ***Release*** mode to make the program run faster.  
 Configure the project with 
 ```bash
 cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -33,8 +33,8 @@ instead of
 cmake ..
 ```
 
-Then, run the code and wait until program computes `200` steps.
-The program print out the computation time.
+Then, run the code and wait until program stops update (`200` steps).
+At the end, the program print out the computation time.
 
 This program computes [n-body simulation](https://en.wikipedia.org/wiki/N-body_simulation), where the particles move while attracting each others.
 
@@ -72,8 +72,7 @@ Comment out `line #215` and uncomment `line #216` to switch to the accelerated c
 We use the jagged array data structure to efficiently find the particles inside a grid.
 Modify the code around `line #172` to compute the force from particles in far grid.
 
-Run the program with different numbers of the particles (5k, 10k, and 20k).
-The number of the particle can be set at `line #189`  in [main.cpp](main.cpp).
+Run the program with different numbers of the particles (5k, 10k, and 20k). 
 Record the computation time by filling the table below.
 
 | #particle | time |
