@@ -2,7 +2,7 @@
 
 ![preview](preview.png)
 
-**Deadline: March 18th (Thu) at 15:00pm**
+**Deadline: May 18th (Thu) at 15:00pm**
 
 ----
 
@@ -33,6 +33,18 @@ instead of
 cmake ..
 ```
 
+If you are using ***Visual Studio*** on Windows, specify the release mode at ***build time*** as  
+
+```bash
+cmake --build . --config Release
+```
+instead of
+
+```bash
+cmake --build .
+```
+
+
 Then, run the code. Take a screenshot image (it should look like image at the top) after 200 steps for the 20k particles.
 Save the screenshot image overwriting `task03/problem1.png`
 
@@ -42,7 +54,7 @@ Save the screenshot image overwriting `task03/problem1.png`
 This program computes distance field from random particle.
 
 Run the program with different numbers of the particles (5k, 10k, and 20k).
-The number of the particle can be set at `line #189`  in [main.cpp](main.cpp).
+The number of the particle can be set at `line #208`  in [main.cpp](main.cpp).
 Record the computation time by filling the table below.     
 
 | #particle | time |

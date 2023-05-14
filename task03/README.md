@@ -2,7 +2,7 @@
 
 ![preview](preview.png)
 
-**Deadline: March 11th (Thu) at 15:00pm**
+**Deadline: May 11th (Thu) at 15:00pm**
 
 ----
 
@@ -31,6 +31,17 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 instead of
 ```bash
 cmake ..
+```
+
+If you are using ***Visual Studio*** on Windows, specify the release mode at ***build time*** as
+
+```bash
+cmake --build . --config Release
+```
+instead of
+
+```bash
+cmake --build .
 ```
 
 Then, run the code and wait until program stops update (`200` steps).
