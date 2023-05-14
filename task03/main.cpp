@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 #include <chrono>
+#include <cassert>
 #define GL_SILENCE_DEPRECATION
 #include <GLFW/glfw3.h>
 #include <Eigen/Dense>

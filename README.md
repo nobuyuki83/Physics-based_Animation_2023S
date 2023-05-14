@@ -45,7 +45,7 @@ Topics:
 | (3)<br> Apr. 24 | **Time Integration**<br/> backward & forward Euler method,<br/> particle system | [task01](task01/README.md) | [[6]](http://www.nobuyuki-umetani.com/pba2023s/time_integration.pdf) |
 | (4)<br> May 1 | **Newtonian Mechanics**<br/>| [task02](task02/README.md) |  [[5]](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf) |
 | (5)<br> May 8 | **Collision Detection**<br/>principal component analysis<br>sort & sweep method <br/>bounding volume hierarchy | [task03](task03/README.md) | [[9]](http://www.nobuyuki-umetani.com/pba2023s/collision_detection.pdf) |
-| (6)<br> May 15 | **Simple Deformation Energy**<br>Hessian & Jacobian,<br>Newton-Raphson method<br/>mass-spring system | task04 |  |
+| (6)<br> May 15 | **Simple Deformation Energy**<br>Hessian & Jacobian,<br>Newton-Raphson method<br/>mass-spring system | [task04](task04/README.md) | [[10]](http://www.nobuyuki-umetani.com/pba2023s/jacobian_hessian.pdf) |
 | (7)<br> May 22 | **Solving Large Linear System**<br/>Sparse matrix data structure<br/>Conjugate gradient method | task05 |  |
 | (8)<br> Jun. 5 | **Optimization with Constraint**<br/>Lagrange multiplier method<br>**Rigid Body Dynamics**<br>Rotation representation | task06 |  |
 | (9)<br> Jun. 12 | **Rigid Body Dynamics2**<br/>inertia tensor, <br/>angular velocity<br>impulse based method | task07 |  |
@@ -65,7 +65,9 @@ Topics:
 - [[7] Jagged Array](http://www.nobuyuki-umetani.com/pba2023s/jagged_array.pdf)
 - [[8] Principal Component Analysis](http://www.nobuyuki-umetani.com/pba2023s/pca.pdf)
 - [[9] Collision Detection](http://www.nobuyuki-umetani.com/pba2023s/collision_detection.pdf)
-
+- [[10] Jacobian and Hessian](http://www.nobuyuki-umetani.com/pba2023s/jacobian_hessian.pdf)
+- [[11] Vector Differentiation](http://www.nobuyuki-umetani.com/pba2023s/vector_differentiation.pdf)
+- [[12] Mass-Spring System](http://www.nobuyuki-umetanid.com/pba2023s/mass_spring_system.pdf)
   
 
 
@@ -73,10 +75,10 @@ Topics:
 
 - 20% lecture attendance
   - Attendance is counted based on writing a secret keyword on LMS. The keyword is announced for each lecture.  
-- 80% small assignemnts
+- 80% small assignments
   - see below
 
-#### Assignemnts
+#### Assignments
 
 There are many small programming assignments. To do the assignments, you need to create your own copy of this repository through **GitHub Classroom**.  These assignements needs to be submitted using **pull request** functionality of the GitHub. Look at the following document. 
 
@@ -88,6 +90,7 @@ There are many small programming assignments. To do the assignments, you need to
 | [task01](task01/README.md) | Implicit Time Integration    | <img src="task01/preview.png" width=100px> |
 | [task02](task02/README.md) | Linear Momentum Conservation | <img src="task02/preview.png" width=100px> |
 | [task03](task03/README.md) | Acceleration of N-body Simulation | <img src="task03/preview.png" width=100px> |
+| [task04](task04/README.md) | Accelerated Nearest Search using Kd-Tree | <img src="task04/preview.png" width=100px> |
 
 
 
