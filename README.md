@@ -67,8 +67,8 @@ Topics:
 - [[9] Collision Detection](http://www.nobuyuki-umetani.com/pba2023s/collision_detection.pdf)
 - [[10] Jacobian and Hessian](http://www.nobuyuki-umetani.com/pba2023s/jacobian_hessian.pdf)
 - [[11] Vector Differentiation](http://www.nobuyuki-umetani.com/pba2023s/vector_differentiation.pdf)
-- [[12] Mass-Spring System](http://www.nobuyuki-umetanid.com/pba2023s/mass_spring_system.pdf)
-- [[13] Optimization](http://www.nobuyuki-umetanid.com/pba2023s/optimization.pdf)
+- [[12] Mass-Spring System](http://www.nobuyuki-umetani.com/pba2023s/mass_spring_system.pdf)
+- [[13] Optimization](http://www.nobuyuki-umetani.com/pba2023s/optimization.pdf)
   
 
 
