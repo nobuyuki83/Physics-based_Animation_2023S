@@ -14,8 +14,8 @@ Follow [this document](../doc/submit.md) to submit the assignment, In a nutshell
 
 - install `eigen` library following  [this document](../doc/setup_eigen.md)
 - make sure you synchronized the `main ` branch of your local repository  to that of remote repository.
-- make sure you created branch `task03` from `main` branch.
-- make sure you are currently in the `task03` branch (use `git branch -a` command).
+- make sure you created branch `task04` from `main` branch.
+- make sure you are currently in the `task04` branch (use `git branch -a` command).
 
 Now you are ready to go!
 
@@ -45,19 +45,19 @@ cmake --build .
 ```
 
 
-Then, run the code. Take a screenshot image (it should look like image at the top) after 200 steps for the 20k particles.
-Save the screenshot image overwriting `task03/problem1.png`
+Then, run the code. Take a screenshot image. 
+Save the screenshot image overwriting `task04/problem1.png`
 
 ![problem1](problem1.png)
 
 
-This program computes distance field from random particle.
+This program computes distance field from random points.
 
 Run the program with different numbers of the particles (5k, 10k, and 20k).
 The number of the particle can be set at `line #208`  in [main.cpp](main.cpp).
 Record the computation time by filling the table below.     
 
-| #particle | time |
+| #points | time |
 | --- | --- |
 | 5000 | ? |
 | 10000 | ? |
@@ -67,15 +67,15 @@ Record the computation time by filling the table below.
 ## Problem 2
 
 The current code compute the distance in the brute-force way. 
-If the is `N` number of points, the computational cost is `O(N)`.  
-Let's accelerate the computation using the Kd-tree data structure.
+If there is `N` number of points, the computational cost is `O(N)`.  
+Let's accelerate the computation using the [Kd-tree data structure](https://en.wikipedia.org/wiki/K-d_tree).
 
 Write a few lines of code around `line #115` to accelerate the search. 
 
 Run the program with different numbers of the particles (5k, 10k, and 20k). 
 Record the computation time by filling the table below.
 
-| #particle | time |
+| #points | time |
 | --- | --- |
 | 5000 | ? |
 | 10000 | ? |
