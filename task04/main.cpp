@@ -205,7 +205,7 @@ int main() {
 
   std::vector<Node> nodes;
   { // constructing Kd-tree's node
-    std::vector<Eigen::Vector2f> particles(100); // set number of particles
+    std::vector<Eigen::Vector2f> particles(10); // set number of particles
     for (auto &p: particles) { // // set coordinates
       p = Eigen::Vector2f::Random() * box_size * 0.5f;
     }

@@ -76,6 +76,25 @@ void draw_polyline(const std::vector<Eigen::Vector2f> &ps) {
   ::glEnd();
 }
 
+void set_some_lighting() {
+  glEnable(GL_LIGHTING);
+  glLightModelf(GL_LIGHT_MODEL_TWO_SIDE, 1.0);
+  { // initialize light parameter
+    glEnable(GL_LIGHT0);
+    GLfloat light0_Kd[] = {0.9f, 0.3f, 0.3f, 1.0f};
+    GLfloat light0_Pos[4] = {+0.5f, -0.5f, +1.0f, 0.0f};
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, light0_Kd);
+    glLightfv(GL_LIGHT0, GL_POSITION, light0_Pos);
+  }
+  {
+    glEnable(GL_LIGHT1);
+    GLfloat light1_Kd[] = {0.3f, 0.3f, 0.9f, 1.0f};
+    GLfloat light1_Pos[4] = {-0.5f, +0.5f, +1.0f, 0.0f};
+    glLightfv(GL_LIGHT1, GL_DIFFUSE, light1_Kd);
+    glLightfv(GL_LIGHT1, GL_POSITION, light1_Pos);
+  }
+}
+
 
 } // namespace pbd
 

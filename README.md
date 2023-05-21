@@ -45,8 +45,8 @@ Topics:
 | (3)<br> Apr. 24 | **Time Integration**<br/> backward & forward Euler method,<br/> particle system | [task01](task01/README.md) | [[6]](http://www.nobuyuki-umetani.com/pba2023s/time_integration.pdf) |
 | (4)<br> May 1 | **Newtonian Mechanics**<br/>| [task02](task02/README.md) |  [[5]](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf) |
 | (5)<br> May 8 | **Collision Detection**<br/>principal component analysis<br>sort & sweep method <br/>bounding volume hierarchy | [task03](task03/README.md) | [[9]](http://www.nobuyuki-umetani.com/pba2023s/collision_detection.pdf) |
-| (6)<br> May 15 | **Simple Deformation Energy**<br>Hessian & Jacobian,<br>Newton-Raphson method<br/>mass-spring system | [task04](task04/README.md) | [[10]](http://www.nobuyuki-umetani.com/pba2023s/jacobian_hessian.pdf) |
-| (7)<br> May 22 | **Solving Large Linear System**<br/>Sparse matrix data structure<br/>Conjugate gradient method | task05 |  |
+| (6)<br> May 15 | **Optimization**<br>Hessian & Jacobian,<br>Newton-Raphson method | [task04](task04/README.md) | [[10]](http://www.nobuyuki-umetani.com/pba2023s/jacobian_hessian.pdf) |
+| (7)<br> May 22 | **Simple Elastic Energy**<br/>mass-spring system<br/>Sparse matrix data structure<br/>Conjugate gradient method | [task05](task05/README.md) | [[12]](http://www.nobuyuki-umetani.com/pba2023s/mass_spring_system.pdf) |
 | (8)<br> Jun. 5 | **Optimization with Constraint**<br/>Lagrange multiplier method<br>**Rigid Body Dynamics**<br>Rotation representation | task06 |  |
 | (9)<br> Jun. 12 | **Rigid Body Dynamics2**<br/>inertia tensor, <br/>angular velocity<br>impulse based method | task07 |  |
 | (10)<br> Jun. 19 | Lagrangian mechanics<br />Variational time integration<br />**Continuum Mechanics**<br> tensor | task08 | |
@@ -67,8 +67,8 @@ Topics:
 - [[9] Collision Detection](http://www.nobuyuki-umetani.com/pba2023s/collision_detection.pdf)
 - [[10] Jacobian and Hessian](http://www.nobuyuki-umetani.com/pba2023s/jacobian_hessian.pdf)
 - [[11] Vector Differentiation](http://www.nobuyuki-umetani.com/pba2023s/vector_differentiation.pdf)
-- [[12] Mass-Spring System](http://www.nobuyuki-umetanid.com/pba2023s/mass_spring_system.pdf)
-- [[13] Optimization](http://www.nobuyuki-umetanid.com/pba2023s/optimization.pdf)
+- [[12] Mass-Spring System](http://www.nobuyuki-umetani.com/pba2023s/mass_spring_system.pdf)
+- [[13] Optimization](http://www.nobuyuki-umetani.com/pba2023s/optimization.pdf)
   
 
 
@@ -92,6 +92,7 @@ There are many small programming assignments. To do the assignments, you need to
 | [task02](task02/README.md) | Linear Momentum Conservation | <img src="task02/preview.png" width=100px> |
 | [task03](task03/README.md) | Acceleration of N-body Simulation | <img src="task03/preview.png" width=100px> |
 | [task04](task04/README.md) | Accelerated Nearest Search using Kd-Tree | <img src="task04/preview.png" width=100px> |
+| [task05](task05/README.md) | Gradient Descent for Mass-Spring Simulation | <img src="task05/preview.png" width=100px> |
 
 
 

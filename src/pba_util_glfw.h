@@ -47,6 +47,27 @@ void default_window_2d(GLFWwindow *window) {
   ::glLoadIdentity();
 }
 
+void default_window_3d(GLFWwindow *window) {
+  // get window size
+  int width, height;
+  ::glfwGetFramebufferSize(window, &width, &height);
+  // get aspect ratio of the window
+  const float ratio = (float) width / (float) height;
+  ::glViewport(0, 0, width, height);
+  ::glClearColor(1.f, 1.f, 1.f, 1.f);
+  ::glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+  // avoid z-fighting
+  ::glEnable(GL_POLYGON_OFFSET_FILL );
+  ::glPolygonOffset( 1.1f, 4.0f );
+  // matrix mode: projection
+  ::glMatrixMode(GL_PROJECTION);
+  ::glLoadIdentity();
+  ::glOrtho(-ratio, ratio, -1.f, 1.f, -3.f, +3.f);
+  // matrix mode : model view
+  ::glMatrixMode(GL_MODELVIEW);
+  ::glLoadIdentity();
+}
+
 }
 
 #endif //PBA_GLFW_UTIL_H_
