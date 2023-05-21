@@ -17,7 +17,7 @@
 #include "../src/pba_floor_drawer.h"
 #include "../src/pba_eigen_gl.h"
 
-void WdWddW_Spring2(
+void wdw_spring_3d(
     float &w,
     Eigen::Vector3f dw[2],
     const Eigen::Vector3f node2xyz[2],
@@ -51,7 +51,7 @@ float gradient_descent_energy_minimization(
     const Eigen::Vector3f node2xyz[2] = {vtx2xyz.row(i_vtx0), vtx2xyz.row(i_vtx1)}; // coordinates of end points
     float w; // energy of one spring
     Eigen::Vector3f dw[2] = { Eigen::Vector3f::Zero(), Eigen::Vector3f::Zero() }; // gradient of the energy of one spring
-    WdWddW_Spring2(
+    wdw_spring_3d( // compute energy and its gradient of a spring
         w, dw,
         node2xyz, length_ini, stiffness);
     W += w;
