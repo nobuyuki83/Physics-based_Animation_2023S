@@ -73,11 +73,13 @@ float gradient_descent_energy_minimization(
 }
 
 int main() {
+  constexpr float learning_rate = 6.5e-3f;
   constexpr int num_theta = 64;
   const auto[tri2vtx, vtx2xyz_ini] = pba::generate_mesh_annulus3(0.3, 0.8, 32, num_theta);
   const auto line2vtx = pba::lines_of_mesh(tri2vtx, static_cast<int>(vtx2xyz_ini.rows()));
   auto vtx2xyz = vtx2xyz_ini;
 
+  // whether the DoFs of vertices are fixed or not. Fixed: 0, Free:1
   Eigen::MatrixX3f vtx2isfree = Eigen::MatrixX3f::Ones(vtx2xyz.rows(), 3);
   for (int i = 0; i < num_theta; ++i) {
     vtx2isfree.row(i) = Eigen::Vector3f(0., 0., 0);
@@ -90,10 +92,9 @@ int main() {
   pba::set_some_lighting();
 
   while (!::glfwWindowShouldClose(window)) {
-
     for (int itr = 0; itr < 40; ++itr) {
       float W = gradient_descent_energy_minimization(
-          vtx2xyz, vtx2xyz_ini, line2vtx, 60.f, 1.f, {0., -0.1, 0}, vtx2isfree, 1.0e-3);
+          vtx2xyz, vtx2xyz_ini, line2vtx, 60.f, 1.f, {0., -0.1, 0}, vtx2isfree, learning_rate);
       if (itr == 0) {
         std::cout << "energy of the system " << W << std::endl;
       }

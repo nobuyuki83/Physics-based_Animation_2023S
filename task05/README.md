@@ -31,18 +31,19 @@ Save the screenshot image overwriting `task05/problem1.png`
 
 ## Problem 2
 
-This program means to compute deformation of skirt as a mass-spring system.
-The total energy of the system is shown in the standard output.     
-And that energy should be minimized.
+This program means to compute deformation of skirt as a mass-spring system. The total energy of the system is shown in the standard output. And that energy should be minimized.
 
 The current code does not compute the gradient of the elastic energy of a spring. 
 Hence, the energy minimization does not lead to elastic deformation.      
 
-Write a few lines of code around `line #31` to accelerate the search.
-
-After running the program for a while, save the screenshot image overwriting `task05/problem2.png`
+Write a few lines of code around `line #31` to accelerate the search. After running the program for a while, save the screenshot image overwriting `task05/problem2.png`
+You may need to adjust the learning rate at `line #76` to reach the convergence. 
 
 ![problem2](problem2.png)
+
+Write down the converged minimum value of the energy by updating the text below.
+
+***minimum energy of the system = ????***
 
 
 ## After Doing the Assignment
