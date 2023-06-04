@@ -44,11 +44,6 @@ void WdWddW_Spring3(
   for (int ino = 0; ino < num_node; ++ino) {
     dw[ino] = stiffness * dC[ino] * C; // dW = k*dC*C
   }
-  for (int ino = 0; ino < num_node; ++ino) {
-    for (int jno = 0; jno < num_node; ++jno) {
-      ddw[ino][jno] = stiffness * dC[ino] * dC[jno].transpose();
-    }
-  }
   // write code to correctly compute hessian of a spring.
   // ddw[i_node][j_node] stands for derivative of dw[i_node] w.r.t the end-point's position node2xyz[j_node]
   // the current hessian computed by the code below is not very accurate, so the simulation is unstable.
