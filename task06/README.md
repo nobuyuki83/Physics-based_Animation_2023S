@@ -1,8 +1,8 @@
-# Task05: Gradient Descent Method for Mass-Spring Simulation
+# Task05: Dynamic Mass-spring System using Variational Euler Time Integration
 
 ![preview](preview.png)
 
-**Deadline: May 25th (Thu) at 15:00pm**
+**Deadline: June 8th (Thu) at 15:00pm**
 
 ----
 
@@ -14,8 +14,8 @@ Follow [this document](../doc/submit.md) to submit the assignment, In a nutshell
 
 - install `eigen` library following  [this document](../doc/setup_eigen.md)
 - make sure you synchronized the `main ` branch of your local repository  to that of remote repository.
-- make sure you created branch `task05` from `main` branch.
-- make sure you are currently in the `task05` branch (use `git branch -a` command).
+- make sure you created branch `task06` from `main` branch.
+- make sure you are currently in the `task06` branch (use `git branch -a` command).
 
 Now you are ready to go!
 
@@ -23,8 +23,8 @@ Now you are ready to go!
 
 ## Problem 1
 
-Run the code as it is . Then, take a screenshot image of a program window after running the program for a while. 
-Save the screenshot image overwriting `task05/problem1.png`
+Run the code as it is .  After running the program for a while, the simulation stops. Then, take a screenshot image of a program window. 
+Save the screenshot image overwriting `task06/problem1.png`
 
 ![problem1](problem1.png)
 
@@ -35,7 +35,7 @@ This program means to compute dynamic animation of skirt as a mass-spring system
 
 The current code does not compute the hessian of the elastic energy of the spring very accurately so the simulation is unstable.
 
-Write a few lines of code around `line #52` to compute hessian accurately. After running the program for a while, save the screenshot image overwriting `task05/problem2.png`
+Write a few lines of code around `line #52` to compute hessian accurately. After running the program for a while, save the screenshot image overwriting `task06/problem2.png`
 
 ![problem2](problem2.png)
 
