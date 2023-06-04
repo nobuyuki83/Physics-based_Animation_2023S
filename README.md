@@ -9,7 +9,7 @@ Lecture at graduate school of information science and technology in the universi
 
 #### ITC-LMS 
 
-For Slack and GitHub Classroom invitaitons
+For Slack and GitHub Classroom invitations
 
 - https://itc-lms.ecc.u-tokyo.ac.jp/lms/course?idnumber=20214860-10810F01
 
@@ -44,13 +44,13 @@ Topics:
 | (2)<br> Apr. 17 | **Data Structure**<br>data structure for simulation<br/>Implicit surface | [task00](task00/README.md) | [[2]](http://www.nobuyuki-umetani.com/pba2023s/data_structure.pdf) |
 | (3)<br> Apr. 24 | **Time Integration**<br/> backward & forward Euler method,<br/> particle system | [task01](task01/README.md) | [[6]](http://www.nobuyuki-umetani.com/pba2023s/time_integration.pdf) |
 | (4)<br> May 1 | **Newtonian Mechanics**<br/>| [task02](task02/README.md) |  [[5]](http://www.nobuyuki-umetani.com/pba2023s/newtonian_mechanics.pdf) |
-| (5)<br> May 8 | **Collision Detection**<br/>principal component analysis<br>sort & sweep method <br/>bounding volume hierarchy | [task03](task03/README.md) | [[9]](http://www.nobuyuki-umetani.com/pba2023s/collision_detection.pdf) |
-| (6)<br> May 15 | **Optimization**<br>Hessian & Jacobian,<br>Newton-Raphson method | [task04](task04/README.md) | [[10]](http://www.nobuyuki-umetani.com/pba2023s/jacobian_hessian.pdf) |
-| (7)<br> May 22 | **Simple Elastic Energy**<br/>mass-spring system<br/>Sparse matrix data structure<br/>Conjugate gradient method | [task05](task05/README.md) | [[12]](http://www.nobuyuki-umetani.com/pba2023s/mass_spring_system.pdf) |
-| (8)<br> Jun. 5 | **Optimization with Constraint**<br/>Lagrange multiplier method<br>**Rigid Body Dynamics**<br>Rotation representation | task06 |  |
-| (9)<br> Jun. 12 | **Rigid Body Dynamics2**<br/>inertia tensor, <br/>angular velocity<br>impulse based method | task07 |  |
-| (10)<br> Jun. 19 | Lagrangian mechanics<br />Variational time integration<br />**Continuum Mechanics**<br> tensor | task08 | |
-| (11)<br> Jun. 26 | **Continuum Mechanics2**<br>Mesh interpolation<br />Tensor | task09 |  |
+| (5)<br> May 8 | **Collision Detection**<br/>principal component analysis<br>sort & sweep method | [task03](task03/README.md) | [[9]](http://www.nobuyuki-umetani.com/pba2023s/collision_detection.pdf) |
+| (6)<br> May 15 | **Optimization**<br>bounding volume hierarchy<br>Hessian & Jacobian | [task04](task04/README.md) | [[10]](http://www.nobuyuki-umetani.com/pba2023s/jacobian_hessian.pdf) |
+| (7)<br> May 22 | **Simple Elastic Energy**<br/>Newton-Raphson method<br>mass-spring system | [task05](task05/README.md) | [[12]](http://www.nobuyuki-umetani.com/pba2023s/mass_spring_system.pdf) |
+| (8)<br> Jun. 5 | **Dynamic Deformation**<br>Variational time integration<br />Sparse matrix data structure<br/>Conjugate gradient method | [task06](task06/README.md) | [[14]](http://www.nobuyuki-umetani.com/pba2023s/variational_integration.pdf) |
+| (9)<br> Jun. 12 | **Optimization with Constraint**<br/>Lagrange multiplier method<br>Lagrangian mechanics | task07 |  |
+| (10)<br> Jun. 19 | **Rigid Body Dynamics**<br/>Rotation representation<br/>inertia tensor, <br/>angular velocity<br/>impulse based method | task08 | |
+| (11)<br> Jun. 26 | **Continuum Mechanics**<br>Mesh interpolation<br />Tensor | task09 |  |
 | (12)<br> Jul. 3 | **Geometric Deformation**<br> singular value decomposition,<br> shape matching method,<br> linear blend skinning,<br> as-rigid-as possible deformation | task10 |  |
 | (13)<br> Jul. 10 | **Advanced Interpolation**<br> mean value coordinate,<br> radial based function |  |  |
 
@@ -69,6 +69,7 @@ Topics:
 - [[11] Vector Differentiation](http://www.nobuyuki-umetani.com/pba2023s/vector_differentiation.pdf)
 - [[12] Mass-Spring System](http://www.nobuyuki-umetani.com/pba2023s/mass_spring_system.pdf)
 - [[13] Optimization](http://www.nobuyuki-umetani.com/pba2023s/optimization.pdf)
+- [[14] Variational Integration](http://www.nobuyuki-umetani.com/pba2023s/variational_integration.pdf)
   
 
 
@@ -93,6 +94,7 @@ There are many small programming assignments. To do the assignments, you need to
 | [task03](task03/README.md) | Acceleration of N-body Simulation | <img src="task03/preview.png" width=100px> |
 | [task04](task04/README.md) | Accelerated Nearest Search using Kd-Tree | <img src="task04/preview.png" width=100px> |
 | [task05](task05/README.md) | Gradient Descent for Mass-Spring Simulation | <img src="task05/preview.png" width=100px> |
+| [task06](task06/README.md) | Dynamic Mass-spring System using Variational Euler Time Integration | <img src="task06/preview.png" width=100px> |
 
 
 

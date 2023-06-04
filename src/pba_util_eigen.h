@@ -6,6 +6,7 @@
 #define PBA_UTIL_EIGEN_H_
 
 #include <set>
+#include <cassert>
 
 namespace pba {
 
@@ -79,17 +80,41 @@ auto vertex_to_elem(
   return std::make_pair(vtx2idx, idx2elem);
 }
 
+
+auto vertex_to_vertex(
+    const Eigen::MatrixXi &elem2vtx,
+    size_t num_vtx) {
+  const auto[vtx2idx, idx2elem] = vertex_to_elem(elem2vtx, num_vtx);
+  std::vector<unsigned int> vtx2jdx, jdx2vtx;
+  vtx2jdx.push_back(0);
+  for (unsigned int i_vtx = 0; i_vtx < num_vtx; ++i_vtx) {
+    std::set<int> set_connected_points;
+    for (unsigned int idx = vtx2idx[i_vtx]; idx < vtx2idx[i_vtx + 1]; ++idx) {
+      const unsigned int i_elem = idx2elem[idx];
+      for (int i_node = 0; i_node < elem2vtx.cols(); ++i_node) {
+        const int j_vtx = elem2vtx(i_elem, i_node);
+        set_connected_points.insert(j_vtx);
+      }
+    }
+    vtx2jdx.push_back(vtx2jdx[vtx2jdx.size()-1]+set_connected_points.size());
+    jdx2vtx.insert(jdx2vtx.end(), set_connected_points.begin(), set_connected_points.end());
+  }
+  assert(vtx2jdx.size() == num_vtx+1);
+  assert(vtx2jdx[num_vtx] == jdx2vtx.size());
+  return std::make_pair(vtx2jdx, jdx2vtx);
+}
+
 auto lines_of_mesh(
     const Eigen::MatrixXi &elem2vtx,
     int num_vtx) {
-  const auto[vtx2idx, idx2tri] = vertex_to_elem(elem2vtx, num_vtx);
+  const auto[vtx2idx, idx2elem] = vertex_to_elem(elem2vtx, num_vtx);
   std::vector<int> _line2vtx;
   for (int i_vtx = 0; i_vtx < num_vtx; ++i_vtx) {
     std::set<int> set_connected_points;
     for (unsigned int idx = vtx2idx[i_vtx]; idx < vtx2idx[i_vtx + 1]; ++idx) {
-      const unsigned int itri0 = idx2tri[idx];
+      const unsigned int ielem0 = idx2elem[idx];
       for (int inode = 0; inode < elem2vtx.cols(); ++inode) {
-        const int j_vtx = elem2vtx(itri0, inode);
+        const int j_vtx = elem2vtx(ielem0, inode);
         if (j_vtx <= i_vtx) continue;
         set_connected_points.insert(j_vtx);
       }
