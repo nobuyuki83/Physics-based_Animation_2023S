@@ -122,7 +122,6 @@ void nearest_kdtree(
 
   if (signed_distance_aabb(pos_in, x_min, x_max, y_min, y_max) > (pos_near - pos_in).norm()) { return; }
 
-  /*
   if (i_depth % 2 == 0) { // division in x direction
     nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_left, x_min, pos.x(), y_min, y_max, i_depth + 1);
     nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_right, pos.x(), x_max, y_min, y_max, i_depth + 1);
@@ -130,29 +129,6 @@ void nearest_kdtree(
     nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_left, x_min, x_max, y_min, pos.y(), i_depth + 1);
     nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_right, x_min, x_max, pos.y(), y_max, i_depth + 1);
   }
-   */
-
-  if (i_depth % 2 == 0) { // division in x direction
-//    nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_left, x_min, pos.x(), y_min, y_max, i_depth + 1);
-//    nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_right, pos.x(), x_max, y_min, y_max, i_depth + 1);
-    // Always start with the branch containing pos_in
-    if (pos_in.x() < pos.x()){
-      nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_left, x_min, pos.x(), y_min, y_max, i_depth + 1);
-      nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_right, pos.x(), x_max, y_min, y_max, i_depth + 1);
-    } else {
-      nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_right, pos.x(), x_max, y_min, y_max, i_depth + 1);
-      nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_left, x_min, pos.x(), y_min, y_max, i_depth + 1);
-    }
-  } else { // division in y-direction
-//    nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_left, x_min, x_max, y_min, pos.y(), i_depth + 1);
-//    nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_right, x_min, x_max, pos.y(), y_max, i_depth + 1);
-    if (pos_in.y() < pos.y()) {
-      nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_left, x_min, x_max, y_min, pos.y(), i_depth + 1);
-      nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_right, x_min, x_max, pos.y(), y_max, i_depth + 1);
-    } else {
-      nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_right, x_min, x_max, pos.y(), y_max, i_depth + 1);
-      nearest_kdtree(pos_near, pos_in, nodes, nodes[idx_node].idx_node_left, x_min, x_max, y_min, pos.y(), i_depth + 1);
-    }
 }
 
 /**
