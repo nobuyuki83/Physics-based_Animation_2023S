@@ -70,7 +70,8 @@ Topics:
 - [[12] Mass-Spring System](http://www.nobuyuki-umetani.com/pba2023s/mass_spring_system.pdf)
 - [[13] Optimization](http://www.nobuyuki-umetani.com/pba2023s/optimization.pdf)
 - [[14] Variational Integration](http://www.nobuyuki-umetani.com/pba2023s/variational_integration.pdf)
-  
+- [[15] Matrix Data Structure](http://www.nobuyuki-umetani.com/pba2023s/matrix_data_structure.pdf)
+- [[16] Linear System Solver](http://www.nobuyuki-umetani.com/pba2023s/linear_system_solver.pdf)
 
 
 ## Grading
