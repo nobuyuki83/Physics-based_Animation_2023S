@@ -171,32 +171,6 @@ void draw_kdtree(
   ::glEnd();
 }
 
-/**
- * call color command with the "hot" colour map
- * @param [in] v
- * @param [in] scale
- */
-void colormap_hot(float v, float scale) {
-  constexpr float map[6][3] = {
-      {0, 0, 0}, // 0
-      {0.5, 0, 0}, // 0.2
-      {1, 0, 0}, // 0.4
-      {1, 0.5, 0}, // 0.6
-      {1, 1, 0}, // 0.8
-      {1, 1, 1}, // 1.0
-  };
-  v *= scale;
-  int ic = int(v * 6.f);
-  float r = v*6.f - static_cast<float>(ic);
-  if( ic >= 5 ){ ic = 4; r = 1.f; }
-  if( ic < 0 ){ ic = 0; r = 0.f; }
-  float color[3] = {
-      (1 - r) * map[ic][0] + r * map[ic + 1][0],
-      (1 - r) * map[ic][1] + r * map[ic + 1][1],
-      (1 - r) * map[ic][2] + r * map[ic + 1][2] };
-  ::glColor3fv(color);
-}
-
 int main() {
 
   GLFWwindow *window = pba::window_initialization("task04: Accelerated Nearest Search using Kd-Tree");
@@ -205,7 +179,7 @@ int main() {
 
   std::vector<Node> nodes;
   { // constructing Kd-tree's node
-    std::vector<Eigen::Vector2f> particles(20000); // set number of particles
+    std::vector<Eigen::Vector2f> particles(5000); // set number of particles
     for (auto &p: particles) { // // set coordinates
       p = Eigen::Vector2f::Random() * box_size * 0.5f;
     }
@@ -254,13 +228,13 @@ int main() {
       ::glBegin(GL_QUADS);
       for (unsigned int iy = 0; iy < num_div; ++iy) {
         for (unsigned int ix = 0; ix < num_div; ++ix) {
-          colormap_hot(grid2dist[(iy+0)*(num_div+1)+(ix+0)], scale);
+          pba::colormap_hot(grid2dist[(iy+0)*(num_div+1)+(ix+0)], scale);
           glVertex2f(ix + 0, iy + 0);
-          colormap_hot(grid2dist[(iy+0)*(num_div+1)+(ix+1)], scale);
+          pba::colormap_hot(grid2dist[(iy+0)*(num_div+1)+(ix+1)], scale);
           glVertex2f(ix + 1, iy + 0);
-          colormap_hot(grid2dist[(iy+1)*(num_div+1)+(ix+1)], scale);
+          pba::colormap_hot(grid2dist[(iy+1)*(num_div+1)+(ix+1)], scale);
           glVertex2f(ix + 1, iy + 1);
-          colormap_hot(grid2dist[(iy+1)*(num_div+1)+(ix+0)], scale);
+          pba::colormap_hot(grid2dist[(iy+1)*(num_div+1)+(ix+0)], scale);
           glVertex2f(ix + 0, iy + 1);
         }
       }

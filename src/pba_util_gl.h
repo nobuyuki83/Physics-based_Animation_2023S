@@ -95,6 +95,26 @@ void set_some_lighting() {
   }
 }
 
+void colormap_hot(float v, float scale) {
+  constexpr float map[6][3] = {
+      {0, 0, 0}, // 0
+      {0.5, 0, 0}, // 0.2
+      {1, 0, 0}, // 0.4
+      {1, 0.5, 0}, // 0.6
+      {1, 1, 0}, // 0.8
+      {1, 1, 1}, // 1.0
+  };
+  v *= scale;
+  int ic = int(v * 6.f);
+  float r = v*6.f - static_cast<float>(ic);
+  if( ic >= 5 ){ ic = 4; r = 1.f; }
+  if( ic < 0 ){ ic = 0; r = 0.f; }
+  float color[3] = {
+      (1 - r) * map[ic][0] + r * map[ic + 1][0],
+      (1 - r) * map[ic][1] + r * map[ic + 1][1],
+      (1 - r) * map[ic][2] + r * map[ic + 1][2] };
+  ::glColor3fv(color);
+}
 
 } // namespace pbd
 

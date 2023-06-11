@@ -96,7 +96,7 @@ There are many small programming assignments. To do the assignments, you need to
 | [task04](task04/README.md) | Accelerated Nearest Search using Kd-Tree | <img src="task04/preview.png" width=100px> |
 | [task05](task05/README.md) | Gradient Descent for Mass-Spring Simulation | <img src="task05/preview.png" width=100px> |
 | [task06](task06/README.md) | Dynamic Mass-spring System using Variational Euler Time Integration | <img src="task06/preview.png" width=100px> |
-
+| [task07](task07/README.md) | Solving Laplace Equation with Gauss-Sidel Method | <img src="task07/preview.png" width=100px> |
 
 
 #### Policy

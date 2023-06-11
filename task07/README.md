@@ -1,8 +1,8 @@
-# Task04: Accelerated Nearest Search using Kd-Tree
+# Task07: Accelerated Nearest Search using Kd-Tree
 
 ![preview](preview.png)
 
-**Deadline: June 18th (Thu) at 15:00pm**
+**Deadline: June 15th (Thu) at 15:00pm**
 
 ----
 
@@ -14,8 +14,8 @@ Follow [this document](../doc/submit.md) to submit the assignment, In a nutshell
 
 - install `eigen` library following  [this document](../doc/setup_eigen.md)
 - make sure you synchronized the `main ` branch of your local repository  to that of remote repository.
-- make sure you created branch `task04` from `main` branch.
-- make sure you are currently in the `task04` branch (use `git branch -a` command).
+- make sure you created branch `task07` from `main` branch.
+- make sure you are currently in the `task07` branch (use `git branch -a` command).
 
 Now you are ready to go!
 
@@ -46,7 +46,7 @@ cmake --build .
 
 
 Then, run the code. Take a screenshot image. 
-Save the screenshot image overwriting `task04/problem1.png`
+Save the screenshot image overwriting `task07/problem1.png`
 
 ![problem1](problem1.png)
 
@@ -55,13 +55,7 @@ This program computes distance field from random points.
 
 Run the program with different numbers of the particles (5k, 10k, and 20k).
 The number of the particle can be set at `line #208`  in [main.cpp](main.cpp).
-Record the computation time by filling the table below.     
-
-| #points | time |
-| --- | --- |
-| 5000 | ? |
-| 10000 | ? |
-| 20000 | ? |
+Record the computation time by filling the table below.
 
 
 ## Problem 2
@@ -74,12 +68,6 @@ Write a few lines of code around `line #115` to accelerate the search.
 
 Run the program with different numbers of the particles (5k, 10k, and 20k). 
 Record the computation time by filling the table below.
-
-| #points | time |
-| --- | --- |
-| 5000 | ? |
-| 10000 | ? |
-| 20000 | ? |
 
 
 ## After Doing the Assignment
