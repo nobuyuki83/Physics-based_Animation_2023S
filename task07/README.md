@@ -1,4 +1,4 @@
-# Task07: Accelerated Nearest Search using Kd-Tree
+# Task07: Dirichlet's Energy Minimization with Gauss-Sidel Method
 
 ![preview](preview.png)
 
@@ -23,51 +23,21 @@ Now you are ready to go!
 
 ## Problem 1
 
-This program is computationally expensive. Build the program with ***Release*** mode to make the program run faster.  
-Configure the project with 
-```bash
-cmake -DCMAKE_BUILD_TYPE=Release ..
-```
-instead of
-```bash
-cmake ..
-```
-
-If you are using ***Visual Studio*** on Windows, specify the release mode at ***build time*** as  
-
-```bash
-cmake --build . --config Release
-```
-instead of
-
-```bash
-cmake --build .
-```
-
-
 Then, run the code. Take a screenshot image. 
 Save the screenshot image overwriting `task07/problem1.png`
 
 ![problem1](problem1.png)
 
 
-This program computes distance field from random points.
-
-Run the program with different numbers of the particles (5k, 10k, and 20k).
-The number of the particle can be set at `line #208`  in [main.cpp](main.cpp).
-Record the computation time by filling the table below.
-
-
 ## Problem 2
 
-The current code compute the distance in the brute-force way. 
-If there is `N` number of points, the computational cost is `O(N)`.  
-Let's accelerate the computation using the [Kd-tree data structure](https://en.wikipedia.org/wiki/K-d_tree).
+This code means to minimize Dirichlet's energy using Gauss-Sidel method. 
 
-Write a few lines of code around `line #115` to accelerate the search. 
+The Dirichlet's energy here is defined as the sum of the squared difference of the values at the end points of the edges.      
 
-Run the program with different numbers of the particles (5k, 10k, and 20k). 
-Record the computation time by filling the table below.
+Write a few lines of code around `line #27` to minimize Dirichlet's energy. Save the screenshot image overwriting `task07/problem2.png`
+
+![problem2](problem2.png)
 
 
 ## After Doing the Assignment

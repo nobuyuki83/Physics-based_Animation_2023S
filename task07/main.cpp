@@ -1,5 +1,5 @@
 /**
- * @file task07: Solving Laplace Equation with Gauss-Sidel Method
+ * @file task07: Dirichlet's Energy Minimization with Gauss-Sidel Method
  */
 
 #include <cstdio>
@@ -16,14 +16,14 @@
 #include "../src/pba_util_gl.h"
 
 void solve_laplace_gauss_sidel_on_grid(
-    std::vector<float> &grid2val,
-    unsigned int num_div,
-    const std::vector<bool> &grid2isfix) {
-  assert(grid2val.size() == num_div * num_div);
-  for (unsigned int i = 0; i < num_div; ++i) {
-    for (unsigned int j = 0; j < num_div; ++j) {
-      unsigned int idx_center = j * num_div + i;
-      if (grid2isfix[idx_center]) { continue; }
+    std::vector<float> &vtx2val,
+    unsigned int grid_size,
+    const std::vector<bool> &vtx2isfix) {
+  assert(vtx2val.size() == grid_size * grid_size);
+  for (unsigned int ix = 0; ix < grid_size; ++ix) {
+    for (unsigned int iy = 0; iy < grid_size; ++iy) {
+      unsigned int idx_center = iy * grid_size + ix;
+      if (vtx2isfix[idx_center]) { continue; }
       // write some code below to implement Gauss-Sidel method
       // Do not write more than 5 lines of code
     }
@@ -32,12 +32,12 @@ void solve_laplace_gauss_sidel_on_grid(
 
 int main() {
 
-  GLFWwindow *window = pba::window_initialization("task07: Solving Laplace Equation with Gauss-Sidel Method");
+  GLFWwindow *window = pba::window_initialization("task07: Dirichlet's Energy Minimization with Gauss-Sidel Method");
 
   constexpr float box_size = 1.8;
 
   unsigned int grid_size = 64; // grid resolution
-  std::vector<float> vtx2val(grid_size * grid_size, 0.1); // grid data array storing distances
+  std::vector<float> vtx2val(grid_size * grid_size); // grid data array storing distances
   {
     std::mt19937 rand(std::random_device{}());
     std::uniform_real_distribution<float> dist01(0.f, 1.f);
@@ -55,12 +55,12 @@ int main() {
       vtx2val[i * grid_size + (grid_size - 1)] = 0.0;
       vtx2val[(grid_size - 1) * grid_size + i] = 0.0;
     }
-    float h = box_size / (grid_size - 1);
+    float h = box_size / static_cast<float>(grid_size - 1);
     for (unsigned int ix = 0; ix < grid_size; ++ix) {
       for (unsigned int iy = 0; iy < grid_size; ++iy) {
-        float x = static_cast<float>(ix) * h - box_size * 0.5f;
-        float y = static_cast<float>(iy) * h - box_size * 0.5f;
-        float r = sqrt(x * x + y * y);
+        const float x = static_cast<float>(ix) * h - box_size * 0.5f;
+        const float y = static_cast<float>(iy) * h - box_size * 0.5f;
+        const float r = sqrt(x * x + y * y);
         if (r < box_size * 0.4 && r > box_size * 0.3) {
           if (fabs(y) < box_size * 0.2 && x > 0.0) {
             continue;
@@ -94,7 +94,7 @@ int main() {
           w += 0.5f * (val - val_right) * (val - val_right);
         }
       }
-      std::cout << "Energy: " << w << std::endl;
+      std::cout << "Dirichlet's Energy: " << w << std::endl;
     }
 
     {

@@ -23,7 +23,7 @@ Now you are ready to go!
 
 ## Problem 1
 
-Run the code as it is .  After running the program for a while, the simulation stops. Then, take a screenshot image of a program window. 
+Run the code as it is.  After running the program for a while, the simulation stops. Then, take a screenshot image of a program window. 
 Save the screenshot image overwriting `task06/problem1.png`
 
 ![problem1](problem1.png)
