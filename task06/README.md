@@ -39,8 +39,6 @@ Write a few lines of code around `line #52` to compute hessian accurately. After
 
 ![problem2](problem2.png)
 
-Write down the converged minimum value of the energy by updating the text below.
-
 ## After Doing the Assignment
 
 After modifying the code, push the code and submit a pull request.
