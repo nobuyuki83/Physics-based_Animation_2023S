@@ -33,7 +33,7 @@ Save the screenshot image overwriting `task07/problem1.png`
 
 This code means to minimize Dirichlet's energy using Gauss-Sidel method. 
 
-The Dirichlet's energy here is defined as the sum of the squared difference of the values at the end points of the edges.      
+The Dirichlet's energy here is defined as the sum of the squared difference of the values at the end points of the edges (see ```line #81```).      
 
 Write a few lines of code around `line #27` to minimize Dirichlet's energy. Save the screenshot image overwriting `task07/problem2.png`
 
@@ -43,8 +43,6 @@ Write a few lines of code around `line #27` to minimize Dirichlet's energy. Save
 ## After Doing the Assignment
 
 After modifying the code, push the code and submit a pull request.
-
-
 
 
 ## Notes

@@ -48,7 +48,7 @@ Topics:
 | (6)<br> May 15 | **Optimization**<br>bounding volume hierarchy<br>Hessian & Jacobian | [task04](task04/README.md) | [[10]](http://www.nobuyuki-umetani.com/pba2023s/jacobian_hessian.pdf) |
 | (7)<br> May 22 | **Simple Elastic Energy**<br/>Newton-Raphson method<br>mass-spring system | [task05](task05/README.md) | [[12]](http://www.nobuyuki-umetani.com/pba2023s/mass_spring_system.pdf) |
 | (8)<br> Jun. 5 | **Dynamic Deformation**<br>Variational time integration<br />Sparse matrix data structure<br/>Conjugate gradient method | [task06](task06/README.md) | [[14]](http://www.nobuyuki-umetani.com/pba2023s/variational_integration.pdf) |
-| (9)<br> Jun. 12 | **Optimization with Constraint**<br/>Lagrange multiplier method<br>Lagrangian mechanics | task07 |  |
+| (9)<br> Jun. 12 | **Optimization with Constraint**<br/>Lagrange multiplier method<br>Lagrangian mechanics | [task07](task07/README.md) | [[17]](http://www.nobuyuki-umetani.com/pba2023s/optimization_with_constraints.pdf) |
 | (10)<br> Jun. 19 | **Rigid Body Dynamics**<br/>Rotation representation<br/>inertia tensor, <br/>angular velocity<br/>impulse based method | task08 | |
 | (11)<br> Jun. 26 | **Continuum Mechanics**<br>Mesh interpolation<br />Tensor | task09 |  |
 | (12)<br> Jul. 3 | **Geometric Deformation**<br> singular value decomposition,<br> shape matching method,<br> linear blend skinning,<br> as-rigid-as possible deformation | task10 |  |
@@ -72,7 +72,7 @@ Topics:
 - [[14] Variational Integration](http://www.nobuyuki-umetani.com/pba2023s/variational_integration.pdf)
 - [[15] Matrix Data Structure](http://www.nobuyuki-umetani.com/pba2023s/matrix_data_structure.pdf)
 - [[16] Linear System Solver](http://www.nobuyuki-umetani.com/pba2023s/linear_system_solver.pdf)
-
+- [[17] Optimization with Constraints](http://www.nobuyuki-umetani.com/pba2023s/optimization_with_constraints.pdf)
 
 ## Grading
 
