@@ -18,6 +18,10 @@
 #include "../src/pba_eigen_gl.h"
 #include "../src/pba_util_eigen.h"
 
+#ifndef M_PI
+  #define M_PI 3.14159265358979323846264338327950288
+#endif
+
 auto load_my_bunny() {
   auto[tri2vtx, vtx2xyz] = pba::load_wavefront_obj(std::filesystem::path(PATH_SOURCE_DIR) / "bunny_1k.obj");
   { // center-ize
