@@ -7,6 +7,11 @@
 
 #include <set>
 #include <cassert>
+#include <Eigen/Dense>
+#include <vector>
+#include <filesystem>
+#include <fstream>
+#include <iostream>
 
 namespace pba {
 
@@ -135,6 +140,55 @@ Eigen::Vector3f unit_normal_of_triangle(
     const Eigen::Vector3f& v3){
   return (v2-v1).cross(v3-v1).normalized();
 }
+
+auto load_wavefront_obj(
+    const std::filesystem::path &file_path) {
+  std::ifstream fin;
+  fin.open(file_path);
+  if (fin.fail()) {
+    std::cout << "File Read Fail" << std::endl;
+    exit(0);
+  }
+  std::vector<float> vtx2xyz;
+  vtx2xyz.reserve(256 * 16);
+  std::vector<int> tri2vtx;
+  tri2vtx.reserve(256 * 16);
+  const int BUFF_SIZE = 256;
+  char buff[BUFF_SIZE];
+  while (fin.getline(buff, BUFF_SIZE)) {
+    if (buff[0] == '#') { continue; }
+    if (buff[0] == 'v' && buff[1] == ' ') {
+      char str[256];
+      double x, y, z;
+      {
+        std::istringstream is(buff);
+        is >> str >> x >> y >> z;
+      }
+      vtx2xyz.push_back(x);
+      vtx2xyz.push_back(y);
+      vtx2xyz.push_back(z);
+    }
+    if (buff[0] == 'f') {
+      char str[256];
+      int i0, i1, i2;
+      {
+        std::istringstream is(buff);
+        is >> str >> i0 >> i1 >> i2;
+      }
+      tri2vtx.push_back(i0 - 1);
+      tri2vtx.push_back(i1 - 1);
+      tri2vtx.push_back(i2 - 1);
+    }
+  }
+  const auto map_tri2vtx = Eigen::Map<Eigen::Matrix<int, Eigen::Dynamic, 3, Eigen::RowMajor> >(
+      tri2vtx.data(), static_cast<int>(tri2vtx.size() / 3), 3);
+  const auto map_vtx2xyz = Eigen::Map<Eigen::Matrix<float, Eigen::Dynamic, 3, Eigen::RowMajor> >(
+      vtx2xyz.data(), static_cast<int>(vtx2xyz.size() / 3), 3);
+  return std::make_pair(
+      Eigen::Matrix<int, Eigen::Dynamic, 3, Eigen::RowMajor>(map_tri2vtx),
+      Eigen::Matrix<float, Eigen::Dynamic, 3, Eigen::RowMajor>(map_vtx2xyz));
+}
+
 
 }
 

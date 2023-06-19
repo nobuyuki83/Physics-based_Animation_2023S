@@ -5,6 +5,8 @@
 #ifndef PBA_EIGEN_GL_H_
 #define PBA_EIGEN_GL_H_
 
+#include "pba_util_eigen.h"
+
 namespace pba {
 
 void draw_triangle_3d_mesh(

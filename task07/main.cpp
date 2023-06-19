@@ -1,5 +1,5 @@
 /**
- * @file task07: Dirichlet's Energy Minimization with Gauss-Sidel Method
+ * @file task07: Dirichlet's Energy Minimization with Gauss-Seidel Method
  */
 
 #include <cstdio>
@@ -15,7 +15,7 @@
 #include "../src/pba_util_glfw.h"
 #include "../src/pba_util_gl.h"
 
-void solve_laplace_gauss_sidel_on_grid(
+void solve_laplace_gauss_seidel_on_grid(
     std::vector<float> &vtx2val,
     unsigned int grid_size,
     const std::vector<bool> &vtx2isfix) {
@@ -24,7 +24,7 @@ void solve_laplace_gauss_sidel_on_grid(
     for (unsigned int iy = 0; iy < grid_size; ++iy) {
       unsigned int idx_center = iy * grid_size + ix;
       if (vtx2isfix[idx_center]) { continue; }
-      // write some code below to implement Gauss-Sidel method
+      // write some code below to implement Gauss-Seidel method
       // Do not write more than 5 lines of code
     }
   }
@@ -32,7 +32,7 @@ void solve_laplace_gauss_sidel_on_grid(
 
 int main() {
 
-  GLFWwindow *window = pba::window_initialization("task07: Dirichlet's Energy Minimization with Gauss-Sidel Method");
+  GLFWwindow *window = pba::window_initialization("task07: Dirichlet's Energy Minimization with Gauss-Seidel Method");
 
   constexpr float box_size = 1.8;
 
@@ -75,7 +75,7 @@ int main() {
   while (!::glfwWindowShouldClose(window)) {
     pba::default_window_2d(window);
 
-    solve_laplace_gauss_sidel_on_grid(
+    solve_laplace_gauss_seidel_on_grid(
         vtx2val, grid_size, vtx2isfix);
 
     { // compute energy

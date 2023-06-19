@@ -1,8 +1,8 @@
-# Task07: Dirichlet's Energy Minimization with Gauss-Seidel Method
+# Task08: Controlling Volume of a Mesh using Lagrange-Multiplier Method
 
 ![preview](preview.png)
 
-**Deadline: June 15th (Thu) at 15:00pm**
+**Deadline: June 22nd (Thu) at 15:00pm**
 
 ----
 
@@ -14,8 +14,8 @@ Follow [this document](../doc/submit.md) to submit the assignment, In a nutshell
 
 - install `eigen` library following  [this document](../doc/setup_eigen.md)
 - make sure you synchronized the `main ` branch of your local repository  to that of remote repository.
-- make sure you created branch `task07` from `main` branch.
-- make sure you are currently in the `task07` branch (use `git branch -a` command).
+- make sure you created branch `task08` from `main` branch.
+- make sure you are currently in the `task08` branch (use `git branch -a` command).
 
 Now you are ready to go!
 
@@ -24,23 +24,24 @@ Now you are ready to go!
 ## Problem 1
 
 Then, run the code. Take a screenshot image. 
-Save the screenshot image overwriting `task07/problem1.png`
+Save the screenshot image overwriting `task08/problem1.png`
 
 ![problem1](problem1.png)
 
 
 ## Problem 2
 
-This code means to minimize Dirichlet's energy using Gauss-Seidel method. 
-
-The Dirichlet's energy here is defined as the sum of the squared difference of the values at the end points of the edges of the grid (see ```line #81```).      
-
-Write a few lines of code around `line #27` to minimize Dirichlet's energy using Gauss-Sidel method. Do not write complicated or long code. 
+This code means to inflate the bunny's mesh twice the volume while minimizing the elastic potential energy of the mass-spring system.
+ 
+Write a few lines of code around `line #83` and `line #147` to set constraint to the volume using the Lagrangian multiplier method. Do not write complicated or long code. 
 
 Save the screenshot image overwriting `task07/problem2.png`
 
 ![problem2](problem2.png)
 
+Write down the elastic potential energy of spring shown in the standard output after the convergence below: 
+
+***elastic potential energy == ?????***
 
 ## After Doing the Assignment
 
