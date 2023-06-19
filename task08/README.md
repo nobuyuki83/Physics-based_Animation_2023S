@@ -33,9 +33,9 @@ Save the screenshot image overwriting `task08/problem1.png`
 
 This code means to inflate the bunny's mesh twice the volume while minimizing the elastic potential energy of the mass-spring system.
  
-Write a few lines of code around `line #83` and `line #147` to set constraint to the volume using the Lagrangian multiplier method. Do not write complicated or long code. 
+Write a few lines of code around `line #83` and `line #147` to set constraint to the volume using the Lagrangian multiplier method. Do not write complicated or long code.  
 
-Save the screenshot image overwriting `task07/problem2.png`
+Save the screenshot image overwriting `task08/problem2.png`
 
 ![problem2](problem2.png)
 

@@ -61,3 +61,5 @@ external/glfwlib
 *.filters
 *.user
 *.recipe
+
+!task08/bunny_1k.obj

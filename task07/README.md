@@ -35,7 +35,7 @@ This code means to minimize Dirichlet's energy using Gauss-Seidel method.
 
 The Dirichlet's energy here is defined as the sum of the squared difference of the values at the end points of the edges of the grid (see ```line #81```).      
 
-Write a few lines of code around `line #27` to minimize Dirichlet's energy using Gauss-Sidel method. Do not write complicated or long code. 
+Write a few lines of code around `line #27` to minimize Dirichlet's energy using Gauss-Seidel method. Do not write complicated or long code. 
 
 Save the screenshot image overwriting `task07/problem2.png`
 

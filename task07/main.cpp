@@ -36,7 +36,7 @@ int main() {
 
   constexpr float box_size = 1.8;
 
-  unsigned int grid_size = 64; // grid resolution
+  unsigned int grid_size = 256; // grid resolution
   std::vector<float> vtx2val(grid_size * grid_size); // grid data array storing distances
   {
     std::mt19937 rand(std::random_device{}());
