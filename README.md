@@ -47,12 +47,12 @@ Topics:
 | (5)<br> May 8 | **Collision Detection**<br/>principal component analysis<br>sort & sweep method | [task03](task03/README.md) | [[9]](http://www.nobuyuki-umetani.com/pba2023s/collision_detection.pdf) |
 | (6)<br> May 15 | **Optimization**<br>bounding volume hierarchy<br>Hessian & Jacobian | [task04](task04/README.md) | [[10]](http://www.nobuyuki-umetani.com/pba2023s/jacobian_hessian.pdf) |
 | (7)<br> May 22 | **Simple Elastic Energy**<br/>Newton-Raphson method<br>mass-spring system | [task05](task05/README.md) | [[12]](http://www.nobuyuki-umetani.com/pba2023s/mass_spring_system.pdf) |
-| (8)<br> Jun. 5 | **Dynamic Deformation**<br>Variational time integration<br />Sparse matrix data structure<br/>Conjugate gradient method | [task06](task06/README.md) | [[14]](http://www.nobuyuki-umetani.com/pba2023s/variational_integration.pdf) |
-| (9)<br> Jun. 12 | **Optimization with Constraint**<br/>Lagrange multiplier method<br>Lagrangian mechanics | [task07](task07/README.md) | [[17]](http://www.nobuyuki-umetani.com/pba2023s/optimization_with_constraints.pdf) |
-| (10)<br> Jun. 19 | **Rigid Body Dynamics**<br/>Rotation representation<br/>inertia tensor, <br/>angular velocity<br/>impulse based method | [task08](task08/README.md) | [[18]](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf) |
-| (11)<br> Jun. 26 | **Continuum Mechanics**<br>Mesh interpolation<br />Tensor | task09 |  |
-| (12)<br> Jul. 3 | **Geometric Deformation**<br> singular value decomposition,<br> shape matching method,<br> linear blend skinning,<br> as-rigid-as possible deformation | task10 |  |
-| (13)<br> Jul. 10 | **Advanced Interpolation**<br> mean value coordinate,<br> radial based function |  |  |
+| (8)<br> Jun. 5 | **Dynamic Deformation**<br>Variational time integration<br /> | [task06](task06/README.md) | [[14]](http://www.nobuyuki-umetani.com/pba2023s/variational_integration.pdf) |
+| (9)<br> Jun. 12 | **Linear System Solver**<br/>Sparse matrix data structure<br/>Conjugate gradient method | [task07](task07/README.md) | [[17]](http://www.nobuyuki-umetani.com/pba2023s/optimization_with_constraints.pdf) |
+| (10)<br> Jun. 19 | **Optimization with Constraint**<br/> Lagrange multiplier method | [task08](task08/README.md) | [[18]](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf) |
+| (11)<br> Jun. 26 | **Rigid Body Dynamics**<br>Rotation representation<br/>inertia tensor, <br/>angular velocity<br/>impulse based method | [task09](task09/README.md) | [[18]](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf) |
+| (12)<br> Jul. 3 | **Continuum Mechanics**<br>Mesh interpolation<br />Tensor<br> singular value decomposition | task10 |  |
+| (13)<br> Jul. 10 | **Geometric Deformation**<br> shape matching method,<br> linear blend skinning,<br> as-rigid-as possible deformation |  |  |
 
 #### Slides
 
@@ -99,6 +99,7 @@ There are many small programming assignments. To do the assignments, you need to
 | [task06](task06/README.md) | Dynamic Mass-spring System using Variational Euler Time Integration | <img src="task06/preview.png" width=100px> |
 | [task07](task07/README.md) | Solving Laplace Equation with Gauss-Seidel Method | <img src="task07/preview.png" width=100px> |
 | [task08](task08/README.md) | Controlling Volume of a Mesh using Lagrange-Multiplier Method | <img src="task08/preview.png" width=100px> |
+| [task09](task09/README.md) | Rotation and Energy Minimization | <img src="task09/preview.png" width=100px> |
 
 #### Policy
 

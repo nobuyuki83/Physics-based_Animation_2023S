@@ -63,3 +63,4 @@ external/glfwlib
 *.recipe
 
 !task08/bunny_1k.obj
+!task09/bunny_1k.obj
