@@ -7,9 +7,7 @@
 #include <iostream>
 #include <vector>
 #include <cassert>
-#include <random>
 #include <filesystem>
-#include <fstream>
 #define GL_SILENCE_DEPRECATION
 #include <GLFW/glfw3.h>
 #include <Eigen/Dense>
@@ -18,7 +16,10 @@
 #include "../src/pba_util_gl.h"
 #include "../src/pba_floor_drawer.h"
 #include "../src/pba_eigen_gl.h"
-#include "../src/pba_util_eigen.h"
+
+#ifndef M_PI
+#define M_PI 3.14159265358979323846264338327950288
+#endif
 
 auto load_my_bunny() {
   auto[tri2vtx, vtx2xyz] = pba::load_wavefront_obj(std::filesystem::path(PATH_SOURCE_DIR) / "bunny_1k.obj");
@@ -71,11 +72,12 @@ void step(
     dEdo += penalty*vtx2xyz_ini.row(i_vtx_fix).cross(t0.transpose() * rotation);
   }
   for(unsigned int i_vtx=0; i_vtx<vtx2xyz.rows(); ++i_vtx){
-    // Write some code below to compute gradient of energy.
-    // differentiation of energy w.r.t. translation and
+    // Write some code below to compute gradient of gravitational potential energy for each vertex
+    // Code differentiation of energy w.r.t. translation and rotation for one line each.
+    // For the differentiation w.r.t. rotation, observe how the rotation matrix will be updated at the line #83
     // dEdt +=
     // dEdo +=
-    // do not change anything else.
+    // do not change anything else except for the lines above.
   }
   translation -= learning_rate * dEdt;
   rotation = rotation * Eigen::AngleAxisf(-dEdo.norm()*learning_rate, dEdo.stableNormalized());
