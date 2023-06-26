@@ -73,7 +73,8 @@ Topics:
 - [[15] Matrix Data Structure](http://www.nobuyuki-umetani.com/pba2023s/matrix_data_structure.pdf)
 - [[16] Linear System Solver](http://www.nobuyuki-umetani.com/pba2023s/linear_system_solver.pdf)
 - [[17] Optimization with Constraints](http://www.nobuyuki-umetani.com/pba2023s/optimization_with_constraints.pdf)
-- [[18] Rotation](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf) 
+- [[18] Rotation](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf)
+- [[19] Grid & Mesh Interpolation](http://www.nobuyuki-umetani.com/pba2023s/grid_mesh_interpolation.pdf)
 
 ## Grading
 
