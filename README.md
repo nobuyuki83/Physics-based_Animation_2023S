@@ -50,9 +50,9 @@ Topics:
 | (8)<br> Jun. 5 | **Dynamic Deformation**<br>Variational time integration<br /> | [task06](task06/README.md) | [[14]](http://www.nobuyuki-umetani.com/pba2023s/variational_integration.pdf) |
 | (9)<br> Jun. 12 | **Linear System Solver**<br/>Sparse matrix data structure<br/>Conjugate gradient method | [task07](task07/README.md) | [[17]](http://www.nobuyuki-umetani.com/pba2023s/optimization_with_constraints.pdf) |
 | (10)<br> Jun. 19 | **Optimization with Constraint**<br/> Lagrange multiplier method | [task08](task08/README.md) | [[18]](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf) |
-| (11)<br> Jun. 26 | **Rigid Body Dynamics**<br>Rotation representation<br/>inertia tensor, <br/>angular velocity<br/>impulse based method | [task09](task09/README.md) | [[18]](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf) |
-| (12)<br> Jul. 3 | **Continuum Mechanics**<br>Mesh interpolation<br />Tensor<br> singular value decomposition | task10 |  |
-| (13)<br> Jul. 10 | **Geometric Deformation**<br> shape matching method,<br> linear blend skinning,<br> as-rigid-as possible deformation |  |  |
+| (11)<br> Jun. 26 | **Rotation**<br>Rotation representation | [task09](task09/README.md) | [[18]](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf) |
+| (12)<br> Jul. 3 | **Rigid Body Dynamics** <br/>inertia tensor, <br/>angular velocity | [task10](task10/README.md) | [[22]](http://www.nobuyuki-umetani.com/pba2023s/equation_of_rigid_body.pdf) |
+| (13)<br> Jul. 10 | **Continuum Mechanics**<br> shape matching method,<br> linear blend skinning,<br> as-rigid-as possible deformation |  |  |
 
 #### Slides
 
@@ -75,6 +75,9 @@ Topics:
 - [[17] Optimization with Constraints](http://www.nobuyuki-umetani.com/pba2023s/optimization_with_constraints.pdf)
 - [[18] Rotation](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf)
 - [[19] Grid & Mesh Interpolation](http://www.nobuyuki-umetani.com/pba2023s/grid_mesh_interpolation.pdf)
+- [[20] Angular Velocity](http://www.nobuyuki-umetani.com/pba2023s/angular_velocity.pdf)
+- [[21] Rigid Body Approximation](http://www.nobuyuki-umetani.com/pba2023s/rigid_body_approximation.pdf)
+- [[22] Equation of Rigid Body](http://www.nobuyuki-umetani.com/pba2023s/equation_of_rigid_body.pdf) 
 
 ## Grading
 
@@ -101,6 +104,7 @@ There are many small programming assignments. To do the assignments, you need to
 | [task07](task07/README.md) | Solving Laplace Equation with Gauss-Seidel Method | <img src="task07/preview.png" width=100px> |
 | [task08](task08/README.md) | Controlling Volume of a Mesh using Lagrange-Multiplier Method | <img src="task08/preview.png" width=100px> |
 | [task09](task09/README.md) | Rotation and Energy Minimization | <img src="task09/preview.png" width=100px> |
+| [task10](task10/README.md) | Simulation of Rigid Body Precession | <img src="task10/preview.png" width=100px> |
 
 #### Policy
 
