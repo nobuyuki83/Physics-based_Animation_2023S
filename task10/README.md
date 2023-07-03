@@ -31,13 +31,15 @@ Save the screenshot image overwriting `task10/problem1.png`
 
 ## Problem 2
 
-This code simulate the motion of rigid body. There is no external force.
+This code simulates the motion of rigid body without any external force or translational movement.
 
-Wait until the program simulate the motion until `time=200`. Save the screenshot image overwriting `task10/problem2.png`
+Add some code around `line 110` to update the rotation matrix and the angular velocity.
+
+The energy and the angular momentum should preserve for some extent.   
+
+Wait until the program stops after simulating the motion until `time=200`. Save the screenshot image overwriting `task10/problem2.png`
 
 ![problem2](problem2.png)
-
-Run the program for a while to let the minimization converge. Write down the converged energy shown in standard output below.
 
 ## After Doing the Assignment
 

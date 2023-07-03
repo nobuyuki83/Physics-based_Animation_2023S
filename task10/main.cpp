@@ -105,16 +105,19 @@ int main() {
     if( time < 200.0 ) {
       for (int itr = 0; itr < 100; ++itr) { // sub-stepping
         time += dt;
-        // write some code below to simulate rotation of the rigid body
-        // Use the forward Euler method to update rotation and the angular velocity
+        // Write some code below to simulate rotation of the rigid body
+        // Use the **forward Euler method** to update the rotation matrix and the angular velocity
         // rotation =
         // Omega =
+        // Do not change anything else except for the two lines above.
       }
       std::cout << "time: " << time << std::endl;
+      // Since we use the forward Euler method for the time integration, the energy will increase slightly over the time.
       std::cout << "   energy: " << Omega.transpose() * inertia * Omega << std::endl;
+      // make sure the angular momentum conserves for some extent
       std::cout << "   angular momentum: " << (rotation * inertia * Omega).transpose() << std::endl;
       trajectory.emplace_back(vtx2xyz.row(i_vtx_trajectory));
-      vtx2xyz = (rotation * vtx2xyz_ini.transpose()).transpose();
+      vtx2xyz = (rotation * vtx2xyz_ini.transpose()).transpose(); // the rotated mesh's vertices
     }
     //
     pba::default_window_3d(window); // start window for 3D visualization

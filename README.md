@@ -78,6 +78,7 @@ Topics:
 - [[20] Angular Velocity](http://www.nobuyuki-umetani.com/pba2023s/angular_velocity.pdf)
 - [[21] Rigid Body Approximation](http://www.nobuyuki-umetani.com/pba2023s/rigid_body_approximation.pdf)
 - [[22] Equation of Rigid Body](http://www.nobuyuki-umetani.com/pba2023s/equation_of_rigid_body.pdf) 
+- [[23] Lagrangian Mechanics](http://www.nobuyuki-umetani.com/pba2023s/lagrangian_mechanics.pdf)
 
 ## Grading
 
