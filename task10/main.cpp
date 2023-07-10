@@ -98,7 +98,7 @@ int main() {
   Eigen::Matrix<float, Eigen::Dynamic, 3, Eigen::RowMajor> vtx2xyz = vtx2xyz_ini; // rotated mesh
   constexpr unsigned int i_vtx_trajectory = 831;
   std::vector<Eigen::Vector3f> trajectory; // trajectory
-  Eigen::Vector3f Omega(0.f, 0.05f, 1.f); // angular velocity (\dot{R} = R * Skew(\Omega))
+  Eigen::Vector3f Omega(0.f, 0.05f, 1.f); // initial angular velocity (\dot{R} = R * Skew(\Omega))
   Eigen::Matrix3f rotation = Eigen::Matrix3f::Identity(); // rotation to optimize
 
   while (!::glfwWindowShouldClose(window)) {
@@ -107,6 +107,7 @@ int main() {
         time += dt;
         // Write some code below to simulate rotation of the rigid body
         // Use the **forward Euler method** to update the rotation matrix and the angular velocity
+        // Note that `rotation` should stay a rotational matrix after the update
         // rotation =
         // Omega =
         // Do not change anything else except for the two lines above.

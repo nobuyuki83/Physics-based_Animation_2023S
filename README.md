@@ -52,7 +52,7 @@ Topics:
 | (10)<br> Jun. 19 | **Optimization with Constraint**<br/> Lagrange multiplier method | [task08](task08/README.md) | [[18]](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf) |
 | (11)<br> Jun. 26 | **Rotation**<br>Rotation representation | [task09](task09/README.md) | [[18]](http://www.nobuyuki-umetani.com/pba2023s/rotation.pdf) |
 | (12)<br> Jul. 3 | **Rigid Body Dynamics** <br/>inertia tensor, <br/>angular velocity | [task10](task10/README.md) | [[22]](http://www.nobuyuki-umetani.com/pba2023s/equation_of_rigid_body.pdf) |
-| (13)<br> Jul. 10 | **Continuum Mechanics**<br> shape matching method,<br> linear blend skinning,<br> as-rigid-as possible deformation |  |  |
+| (13)<br> Jul. 10 | **Continuum Mechanics**<br> tensor,<br> finite element method |  | [[24]](http://www.nobuyuki-umetani.com/pba2023s/tensor.pdf) |
 
 #### Slides
 
@@ -79,6 +79,10 @@ Topics:
 - [[21] Rigid Body Approximation](http://www.nobuyuki-umetani.com/pba2023s/rigid_body_approximation.pdf)
 - [[22] Equation of Rigid Body](http://www.nobuyuki-umetani.com/pba2023s/equation_of_rigid_body.pdf) 
 - [[23] Lagrangian Mechanics](http://www.nobuyuki-umetani.com/pba2023s/lagrangian_mechanics.pdf)
+- [[24] Tensor](http://www.nobuyuki-umetani.com/pba2023s/tensor.pdf)
+- [[25] Finite Element Method](http://www.nobuyuki-umetani.com/pba2023s/finite_element_method.pdf)
+
+
 
 ## Grading
 

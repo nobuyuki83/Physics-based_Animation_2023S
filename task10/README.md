@@ -33,7 +33,7 @@ Save the screenshot image overwriting `task10/problem1.png`
 
 This code simulates the motion of rigid body without any external force or translational movement.
 
-Add some code around `line 110` to update the rotation matrix and the angular velocity.
+Add some code around `line 108` to update the rotation matrix and the angular velocity.
 
 The energy and the angular momentum should preserve for some extent.   
 
